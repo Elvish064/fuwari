@@ -64,6 +64,11 @@ export const profileConfig: ProfileConfig = {
       url: 'https://x.com/Elvish064',
     },
     {
+      name: 'Telegram',
+      icon: 'fa6-brands:telegram',
+      url: 'https://t.me/Elvish064',
+    },
+    {
       name: 'Steam',
       icon: 'fa6-brands:steam',
       url: 'https://steamcommunity.com/profiles/76561199494359159/',
@@ -77,16 +82,6 @@ export const profileConfig: ProfileConfig = {
       name: 'Bilibili',
       icon: 'fa6-brands:bilibili',
       url: 'https://space.bilibili.com/1613372234',
-    },
-    {
-      name: 'Telegram',
-      icon: 'fa6-brands:telegram',
-      url: 'https://t.me/Elvish064',
-    },
-    {
-      name: 'Email',
-      icon: 'material-symbols:mail',
-      url: 'mailto:3356832185@qq.com',
     },
   ],
 }
