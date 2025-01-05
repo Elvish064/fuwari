@@ -1,11 +1,11 @@
 ---
 title: Hello fuwari🌟, Hello world🌎
-published: 2024-12-30
+published: 2025-01-5
 description: "A new blog,a new start."
 image: ""
-tags: ["Fuwari", "Tittle-tattle", "Experience"]
-category: Tittle-tattle
-series: Tittle-tattle
+tags: ["Fuwari", "杂谈", "经验"]
+category: 杂谈
+series: 杂谈💭
 draft: false
 ---
 经过一周多的高强度折腾，这个小站也算是基本搭建好了。
@@ -16,7 +16,7 @@ draft: false
 > 
 > 2024-09-22：在[US.KG](https://nic.us.kg)注册免费域名elvish.us.kg，并尝试使用内网穿透进行搭建，因备案相关问题，遂弃用
 > 
-> 2024-10-01：痛下决心，办理了公网ipv4，联通了服务器上的[Halo](https://www.halo.run/)与公网，使用[Cloudflare](https://cloudflare.com)代理以去除域名后的端口号
+> 2024-10-01：痛下决心，办理了公网ipv4，连通了服务器上的[Halo](https://www.halo.run/)与公网，使用[Cloudflare](https://cloudflare.com)代理以去除域名后的端口号
 > 
 > 2024-10-xx：给[Halo](https://www.halo.run/)更改[Butterfly](https://github.com/dhjddcn/halo-theme-butterfly)主题，并尝试开始撰写第一篇文章
 > 
@@ -28,7 +28,7 @@ draft: false
 > 
 > 2024-12-29：此后的几天，都在根据大佬[AuLyPc](https://blog.aulypc0x0.online/)的文章进行对博客进行一系列改造
 > 
-> 2024-12-30：改用根据[Astro官方文档](https://docs.astro.build)，改用[Cloudflare Pages](https://pages.cloudflare.com/)进行部署，绑定域名elvish.me
+> 2024-12-30：根据[Astro官方文档](https://docs.astro.build)，改用[Cloudflare Pages](https://pages.cloudflare.com/)进行部署，绑定域名elvish.me
 > 
 > 2025-01-01：申请[萌ICP20250030号](https://icp.gov.moe/?keyword=20250030)备案，次日通过
 > 
