@@ -1,6 +1,6 @@
 ---
 title: Hello fuwari🌟, Hello world🌎
-published: 2025-01-5
+published: 2025-01-05
 description: "A new blog,a new start."
 image: ""
 tags: ["Fuwari", "杂谈", "经验"]
