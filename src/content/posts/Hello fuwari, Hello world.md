@@ -2,7 +2,7 @@
 title: Hello fuwari🌟, Hello world🌎
 published: 2025-01-05
 description: "A new blog,a new start."
-image: "https://cdn.jsdelivr.net/npm/elvish-fuwari-public@1.0.0/fuwari/post/hello-world/winter.jpg"
+image: "https://cdn.jsdelivr.net/npm/elvish-fuwari-public@latest/fuwari/post/hello-world/winter.jpg"
 tags: ["Fuwari", "杂谈", "经验"]
 category: 杂谈
 series: 杂谈💭
