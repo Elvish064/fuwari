@@ -16,7 +16,7 @@ export const siteConfig: SiteConfig = {
   },
   banner: {
     enable: true,
-    src: 'assets/images/banner.webp',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    src: 'https://cdn.jsdelivr.net/npm/elvish-fuwari-public@latest/fuwari/mainpage/banner.webp',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
     position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: true,         // Display the credit text of the banner image
@@ -52,7 +52,7 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/avatar.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'https://cdn.jsdelivr.net/npm/elvish-fuwari-public@latest/fuwari/mainpage/avatar.jpg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Elvish',
   bio: '你好喵~',
   links: [
