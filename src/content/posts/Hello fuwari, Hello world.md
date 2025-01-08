@@ -8,6 +8,10 @@ category: 杂谈
 series: 杂谈💭
 draft: false
 ---
+:::note[Cover Source]
+[…はじまり…-そもん❁*.ﾟ](https://www.pixiv.net/artworks/125801787)
+:::
+
 经过一周多的高强度折腾，这个小站也算是基本搭建好了。
 事情还需从5个月前说起：
 > 2024-07-xx：初次有了搭建博客的想法，使用了[Docsify](https://docsify.js.org)作为框架，部署在N100主机上，通过ipv6公网访问，在[Dynv6](https://dynv6.com/)注册免费域名elvish.dynv6.net
