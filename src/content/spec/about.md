@@ -48,16 +48,14 @@
 > 2. 卡拉彼丘
 > 3. CS2
 > 4. TitanFall 2
-J> 5. 崩坏: 星穹铁道
+> 5. 崩坏: 星穹铁道
 > 6. Minecraft (Java)
 > 7. Battlefield 1
 
 **喜欢的角色：**
-> First place：
 >- <span  style="color:#9bd9fa; ">甘雨 - 原神</span>
 >- <span  style="color:#6c90a3; ">心夏 - 卡拉彼丘</span>
-> 
-> Secon
+
 **玩过的最棒的游戏：**
 <details markdown='1'><summary>展开/收起</summary>
 
@@ -69,7 +67,7 @@ J> 5. 崩坏: 星穹铁道
 > - 最棒的猫猫模拟器：Stray
 > - 最没完全搞懂的游戏：雀魂
 > - 最棒的_第一人称射击_游戏：Wallpaper Engine
-> - ~~玩家全是猫娘的游戏：卡拉彼丘~~
+> - ~~最多玩家为猫娘的游戏：卡拉彼丘~~
 
 </details>
 
