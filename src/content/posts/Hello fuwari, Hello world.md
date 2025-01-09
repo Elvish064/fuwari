@@ -5,7 +5,7 @@ description: "A new blog,a new start."
 image: "https://cdn.jsdelivr.net/npm/elvish-fuwari-public@latest/fuwari/post/hello-world/winter.jpg"
 tags: ["Fuwari", "杂谈", "经验"]
 category: 杂谈
-series: 杂谈💭
+series: Fuwari
 draft: false
 ---
 :::note[Cover Source]
@@ -40,3 +40,6 @@ draft: false
 > 
 > 2025-01-05：开始撰写这篇文章
 
+总之还是很喜欢Fuwari这个主题的
+::github{repo="saicaca/fuwari"}
+给大佬点个star⭐
