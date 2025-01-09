@@ -65,32 +65,25 @@
 
 玩过的最棒的游戏：
 <details markdown='1'><summary>展开/收起</summary>
-> 最佳沙盒：Minecraft
-> 
-> 最佳FPS剧情设计：TitanFall 2/COD现代战争系列
-> 
-> 最硬核FPS：CS2/Battlefield 1
-> 
-> 最佳解密：Portal/Sulerliminal
-> 
-> 最佳文字冒险：饿殍: 明末千里行
-> 
-> 最有趣的恐怖游戏：米塔Miside
-> 
-> 最棒的猫猫模拟器：Stray
-> 
-> 最没完全搞懂的游戏：雀魂
-> 
-> 最棒的_第一人称射击_游戏：Wallpaper Engine
-> 
-> ~~玩家全是猫娘的游戏：卡拉彼丘~~
+
+> - 最佳沙盒：Minecraft
+> - 最佳FPS剧情设计：TitanFall 2/COD现代战争系列
+> - 最硬核FPS：CS2/Battlefield 1
+> - 最佳解密：Portal/Sulerliminal
+> - 最佳文字冒险：饿殍: 明末千里行
+> - 最有趣的恐怖游戏：米塔Miside
+> - 最棒的猫猫模拟器：Stray
+> - 最没完全搞懂的游戏：雀魂
+> - 最棒的_第一人称射击_游戏：Wallpaper Engine
+> - ~~玩家全是猫娘的游戏：卡拉彼丘~~
 </details>
 
 愿望清单：
 <details markdown='1'><summary>展开/收起</summary>
+
 - [ ] VRchat
 - [ ] 星际公民
 - [ ] Microsoft Flight Simulator 2024
 - [ ] Battlefield 5/2042
 
-</details>
+</details
