@@ -72,5 +72,5 @@ const unique = (arr)=>{
 
 ![text](https://img.shields.io/badge/Genshin-luanch)
 
-    <script type="text/javascript">function runtime(){const t=new Date("01/15/2025 08:00:00"),n=new Date,s=n-t,e=Math.floor(s/1e3),o=Math.floor(e/86400),i=Math.floor(e%86400/3600),a=Math.floor(e%3600/60),r=e%60;document.getElementById("runningtime").innerHTML=`距离文章上次编辑: ${o}天${i}小时${a}分${r}秒 `}setInterval(runtime,1e3)</script>
-    <div class="transition text-50 text-sm text-center hidden md:block"><p id="runningtime"> </p></div>
+<script type="text/javascript">function runtime(){const t=new Date("01/15/2025 08:00:00"),n=new Date,s=n-t,e=Math.floor(s/1e3),o=Math.floor(e/86400),i=Math.floor(e%86400/3600),a=Math.floor(e%3600/60),r=e%60;document.getElementById("runningtime").innerHTML=`距离文章上次编辑: ${o}天${i}小时${a}分${r}秒 `}setInterval(runtime,1e3)</script>
+<div class="transition text-50 text-sm text-center hidden md:block"><p id="runningtime"> </p></div>
