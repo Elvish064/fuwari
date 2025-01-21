@@ -103,10 +103,10 @@
 **愿望清单：**
 <details markdown='1'><summary>展开/收起</summary>
 
-> [ ] VRchat
-> [ ] 星际公民
-> [ ] Microsoft Flight Simulator 2024
-> [ ] Battlefield 5/2042
+> - [ ] VRchat
+> - [ ] 星际公民
+> - [ ] Microsoft Flight Simulator 2024
+> - [ ] Battlefield 5/2042
 
 </details>
 
