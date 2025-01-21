@@ -22,14 +22,19 @@ const unique = (arr)=>{
 ```
 
 // 数组去重
+
 const unique = (arr)=>{
+
 `-`	 return Array.from(new Set(arr))
+
 `+`  return [...new Set(arr)]
+
 }
 
 ---
 ### 2.键盘输入元素
 <kbd>ctrl</kbd> +  <kbd>s</kbd>
+
 `<kbd>ctrl</kbd> +  <kbd>s</kbd>`
 
 ---
@@ -41,6 +46,7 @@ const unique = (arr)=>{
 <font color=purple>紫色</font>
 <mark>高亮</mark> 
 ```
+
 <font color=red>红色</font>
 <font color=blue>蓝色</font>
 <font color=orange>橙色</font>
