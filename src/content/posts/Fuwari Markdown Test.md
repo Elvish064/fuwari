@@ -2,15 +2,12 @@
 title: 适用于Fuwari的Markdown语法测试
 published: 2025-01-21
 description: "如题"
-image: "https://cdn.jsdelivr.net/npm/elvish-fuwari-public@latest/fuwari/post/hello-world/winter.jpg"
+image: ""
 tags: ["Fuwari"]
 category: Fuwari
 series: Fuwari
 draft: false
 ---
-:::note[Cover Source]
-[…はじまり…-そもん❁*.ﾟ](https://www.pixiv.net/artworks/125801787)
-:::
 
 ### 1.代码diff
 ``` diff
