@@ -72,6 +72,7 @@ const unique = (arr)=>{
 
 ![text](https://img.shields.io/badge/Genshin-luanch)
 
+
 <div>
     <script type="text/javascript">
         function runtime() {
@@ -91,3 +92,5 @@ const unique = (arr)=>{
         <p id="runningtime"> </p>
     </div>
 </div>
+
+
