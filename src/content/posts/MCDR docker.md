@@ -3,8 +3,8 @@ title: "[Minecraft]基于MCDR docker镜像的Java1.20.1Fabric生电服务器搭�
 published: 2025-01-22
 description: "如题"
 image: "https://raw.githubusercontent.com/MCDReforged/MCDReforged/master/logo/images/logo_long.png"
-tags: ["Fuwari"]
-category: Fuwari
+tags: ["Minecraft"]
+category: Minecraft
 series: Minecraft
 draft: false
 ---
