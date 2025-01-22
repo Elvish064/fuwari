@@ -9,9 +9,9 @@ series: Minecraft
 draft: false
 ---
 
-> [MCDReforged](https://mcdreforged.com/zh-CN)
-> MCDaemon 的重置版本，用于控制 Minecraft 服务器的一个 Python 工具
-> TIS大佬力作，适合生电服务器使用
+> [MCDReforged](https://mcdreforged.com/zh-CN)<br>
+> MCDaemon 的重置版本，用于控制 Minecraft 服务器的一个 Python 工具<br>
+> TIS大佬力作，适合生电服务器使用<br>
 
 ::github{repo="MCDReforged/MCDReforged"}
 ---
