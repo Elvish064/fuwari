@@ -18,14 +18,10 @@ const unique = (arr)=>{
 }
 ```
 
-// 数组去重
-
-const unique = (arr)=>{
-
-`-`	 return Array.from(new Set(arr))
-
-`+`  return [...new Set(arr)]
-
+// 数组去重<br>
+const unique = (arr)=>{<br>
+`-`	 return Array.from(new Set(arr))<br>
+`+`  return [...new Set(arr)]<br>
 }
 
 ---
