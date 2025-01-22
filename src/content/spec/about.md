@@ -115,7 +115,7 @@
 ::github{repo="saicaca/fuwari"}
 搭建过程记载在[Hello fuwari🌟, Hello world🌎](https://elvish.me/posts/hello-fuwari-hello-world/)
 
-此外，感谢[AuLyPc](https://blog.aulypc0x0.online/)大佬给出的很多关于这个框架的提升功能的教程
+此外，感谢[AuLyPc](https://blog.aulypc0x0.online/)大佬给出的很多关于这个框架的增强功能的教程
 
 ---
 ### 总之，还有什么想起来的，以后再补充吧
