@@ -66,7 +66,7 @@ const unique = (arr)=>{<br>
 `![text](https://img.shields.io/badge/any_text-you_like-blue)`
 ![text](https://img.shields.io/badge/any_text-you_like-blue)
 
-![text](https://img.shields.io/badge/Genshin-luanch)
+![text](https://img.shields.io/badge/Genshin-luanch-blue)
 
 
 
