@@ -20,7 +20,7 @@ lang: 'zh_CN'
 - **适用于docker的系统**（Ubuntu、Debian、Windows WSL2 等）
 - **已正确配置的docker 和 docker-compose**
 - RAM ≥ 2GB
-- 公网IPv4或IPv6（optional）
+- 公网IPv4或IPv6，或自行配置内网穿透
 
 ### 演示环境：
 >- Ubuntu 24.04
@@ -51,7 +51,9 @@ services:
       - TZ=Asia/Shanghai
 ```
 
+:::note[Cover Source]
 这里以 <u>mcdreforged-temurin:2.13.0-py3.11-slim-jdk17-extra</u> 镜像为例，该镜像包含了**OpenJDK17与Python3.11**
+:::
 
 >更多其他版本的镜像可以参考官方文档：[MCDReforged文档](https://docs.mcdreforged.com/zh-cn/latest/docker.html#extra-image)
 
@@ -148,7 +150,9 @@ start_command: java -Xms1G -Xmx8G -jar fabric-server-launch.jar nogui
 ``` yml
 start_command: java -Xms1G -Xmx8G -jar server.jar nogui
 ```
+:::note
 参数请**根据自身实际情况**进行调整
+:::
 
 随后返回容器根目录启动容器以执行启动命令`sudo docker-compose up -d`, 并查看日志`sudo docker logs mcdr `
 
@@ -318,9 +322,13 @@ mcdr  | [Server] [xx:xx:xx] [Server thread/INFO]: Elvish064 joined the game
 
 > 有关MCDR控制台命令请参见[MCDReforged文档](https://docs.mcdreforged.com/zh-cn/latest/command/index.html) 
 
+:::warn
 此时如果使用`exit`退出，容器会**停止运行**！
+:::
 
+:::tip
 如果想**退出容器但不想容器停止**，则按住<kbd>Ctrl</kbd>+<kbd>P</kbd>+<kbd>Q</kbd>退出
+:::
 
 ---
 至此，你已经成功的在mcdr docker里运行了Minecraft 1.20.1 fabric服务端！🎉
