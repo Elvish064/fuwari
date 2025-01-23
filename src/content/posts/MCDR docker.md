@@ -322,7 +322,7 @@ mcdr  | [Server] [xx:xx:xx] [Server thread/INFO]: Elvish064 joined the game
 
 > 有关MCDR控制台命令请参见[MCDReforged文档](https://docs.mcdreforged.com/zh-cn/latest/command/index.html) 
 
-:::warn
+:::warning
 此时如果使用`exit`退出，容器会**停止运行**！
 :::
 
