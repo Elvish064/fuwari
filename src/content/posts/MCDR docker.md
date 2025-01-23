@@ -51,7 +51,7 @@ services:
       - TZ=Asia/Shanghai
 ```
 
-:::note[Cover Source]
+:::note
 这里以 <u>mcdreforged-temurin:2.13.0-py3.11-slim-jdk17-extra</u> 镜像为例，该镜像包含了**OpenJDK17与Python3.11**
 :::
 
