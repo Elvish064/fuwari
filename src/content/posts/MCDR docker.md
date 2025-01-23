@@ -7,6 +7,7 @@ tags: ["Minecraft"]
 category: Minecraft
 series: Minecraft
 draft: false
+lang: 'zh_CN'
 ---
 
 > [MCDReforged](https://mcdreforged.com/zh-CN)<br>
@@ -216,7 +217,7 @@ white-list=true               #建议开启白名单
 ```
 **3.配置fabric**
 
-下载fabri核心，置于server.jar同级目录：`sudo wget  -O fabric-server-mc.1.21.4-loader.0.16.9-launcher.1.0.1.jar "https://meta.fabricmc.net/v2/versions/loader/1.21.4/0.16.9/1.0.1/server/jar" `
+下载fabri核心，置于server.jar同级目录：`sudo wget  -O fabric-server-mc.1.20.1-loader.0.16.9-launcher.1.0.1.jar "https://meta.fabricmc.net/v2/versions/loader/1.20.1/0.16.9/1.0.1/server/jar" `
 
 修改根目录下的`config.yml`，以启用fabric核心：
 ``` yml
