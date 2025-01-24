@@ -334,3 +334,7 @@ mcdr  | [Server] [xx:xx:xx] [Server thread/INFO]: Elvish064 joined the game
 ---
 至此，你已经成功的在mcdr docker里运行了Minecraft 1.20.1 fabric服务端！🎉
 
+---
+:::important
+![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari?path=src%2Fcontent%2Fposts%2FMCDR-docker&style=for-the-badge&label=%E4%B8%8A%E6%AC%A1%E7%BC%96%E8%BE%91%E6%97%B6%E9%97%B4&labelColor=181E24&color=181E24)部分信息可能已经过时
+:::
