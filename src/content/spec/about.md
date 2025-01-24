@@ -128,4 +128,5 @@
 
 ---
 ### 总之，还有什么想起来的，以后再补充吧
-![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari?path=src%2Fcontent%2Fspec%2Fabout.md&style=social&label=%E4%B8%8A%E6%AC%A1%E7%BC%96%E8%BE%91%E6%97%B6%E9%97%B4)
+![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari?path=src%2Fcontent%2Fspec%2Fabout.md&style=social&label=%E4%B8%8A%E6%AC%A1%E7%BC%96%E8%BE%91%E6%97%B6%E9%97%B4&labelColor=(24%2C30%2C36)&color=(24%2C30%2C36))
+
