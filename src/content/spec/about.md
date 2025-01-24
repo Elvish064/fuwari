@@ -122,9 +122,9 @@
 
 均来自于[Pixiv](https://pixiv.net)或项目官网
 
-> 如有侵权，请通过邮件按钮联系我进行删除
-> If there is any infringement, please contact me through the email button to delete it.
-> 権利侵害がある場合は、削除するためにメールボタンからご連絡ください。
+> - 如有侵权，请通过邮件按钮联系我进行删除<br>
+> - If there is any infringement, please contact me through the email button to delete it.<br>
+> - 権利侵害がある場合は、削除するためにメールボタンからご連絡ください。
 
 ---
 ### 总之，还有什么想起来的，以后再补充吧
