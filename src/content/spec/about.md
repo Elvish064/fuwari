@@ -118,4 +118,11 @@
 此外，感谢[AuLyPc](https://blog.aulypc0x0.online/)大佬给出的很多关于这个框架的增强功能的教程
 
 ---
+### 使用的图片资源等📊
+**均来自于[Pixiv](https://pixiv.net)或项目官网**
+> 如有侵权，请通过邮件按钮联系我进行删除
+> If there is any infringement, please contact me through the email button to delete it.
+> 権利侵害がある場合は、削除するためにメールボタンからご連絡ください。
+
+---
 ### 总之，还有什么想起来的，以后再补充吧
