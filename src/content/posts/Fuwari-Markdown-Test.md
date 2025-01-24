@@ -67,17 +67,15 @@ const unique = (arr)=>{<br>
 ![text](https://img.shields.io/badge/any_text-you_like-blue)
 
 ![text](https://img.shields.io/badge/Genshin-luanch-blue)
-
+- flat
 ![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari?path=src%2Fcontent%2Fposts%2FFuwari-Markdown-Test.md&style=flat&label=%E4%B8%8A%E6%AC%A1%E7%BC%96%E8%BE%91%E6%97%B6%E9%97%B4&labelColor=181E24&color=181E24)
-
+- flat-square
 ![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari?path=src%2Fcontent%2Fposts%2FFuwari-Markdown-Test.md&style=flat-square&label=%E4%B8%8A%E6%AC%A1%E7%BC%96%E8%BE%91%E6%97%B6%E9%97%B4&labelColor=181E24&color=181E24)
-
+- plastic
 ![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari?path=src%2Fcontent%2Fposts%2FFuwari-Markdown-Test.md&style=plastic&label=%E4%B8%8A%E6%AC%A1%E7%BC%96%E8%BE%91%E6%97%B6%E9%97%B4&labelColor=181E24&color=181E24)
-
+- for-the-badge
 ![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari?path=src%2Fcontent%2Fposts%2FFuwari-Markdown-Test.md&style=for-the-badge&label=%E4%B8%8A%E6%AC%A1%E7%BC%96%E8%BE%91%E6%97%B6%E9%97%B4&labelColor=181E24&color=181E24)
-
-
-
+- social
 ![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari?path=src%2Fcontent%2Fposts%2FFuwari-Markdown-Test.md&style=social&label=%E4%B8%8A%E6%AC%A1%E7%BC%96%E8%BE%91%E6%97%B6%E9%97%B4&labelColor=181E24&color=181E24)
 
 
