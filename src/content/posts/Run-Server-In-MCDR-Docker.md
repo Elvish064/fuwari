@@ -3,7 +3,7 @@ title: "[Minecraft]在docker中运行mcdr生电服"
 published: 2025-01-22
 updated: 2025-01-23
 description: "基于MCDR docker镜像的Java1.20.1Fabric生电服务器搭建"
-image: "https://raw.githubusercontent.com/MCDReforged/MCDReforged/master/logo/images/logo_long.png"
+image: " "https://cdn.jsdelivr.net/npm/elvish-fuwari-public@latest/fuwari/post/MCDR-docker/MCDR-logo.png"
 tags: [Minecraft,Game]
 category: Minecraft
 series: Minecraft
