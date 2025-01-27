@@ -5,6 +5,7 @@ description: "如何使用此博客模板"
 image: "./cover.jpeg"  
 tags: ["Fuwari", "博客", "自定义"]  
 category: 指南  
+series: 示例
 draft: false  
 ---
 
