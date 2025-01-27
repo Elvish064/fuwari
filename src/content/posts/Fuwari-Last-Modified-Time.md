@@ -20,7 +20,7 @@ lang: 'zh_CN'
 
 ---
 ## 配置
-打开(https://shields.io/badges/git-hub-last-commit)，可以根据引导填写参数
+打开[Shields.io Github Last Commit](https://shields.io/badges/git-hub-last-commit)，可以根据引导填写参数
 :::tip
 - `user`:自己的用户名
 - `repo`:Fuwari的仓库名称
