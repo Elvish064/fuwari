@@ -1,5 +1,5 @@
 ---
-title: 适用于Fuwari的Markdown语法测试
+title: "[Fuwari]适用的Markdown语法测试"
 published: 2025-01-21
 description: "如题"
 image: ""
