@@ -25,7 +25,7 @@ lang: 'zh_CN'
 - `user`:自己的用户名
 - `repo`:Fuwari的仓库名称
 - `path`:指向当前这个页面的md文件，一般位于`src/content/posts/*.md`
-- `style`:不同风格的Badges在Fuwari上渲染的样式不太相同，示例参见[\[Fuwari\]适用的Markdown语法测试](https://elvish.me/posts/fuwari-markdown-test/)
+- `style`:不同风格的Badges在Fuwari上渲染的样式不太相同，示例参见[\[Fuwari\]适用的Markdown语法测试](https://elvish.me/posts/fuwari-markdown-test/#5shields%E5%BE%BD%E7%AB%A0)
 - `label`:Badge左侧显示的文字，如`上次编辑时间`
 - `labelColor`:Badge左侧底色，这里使用Fuwari暗色背景底色`181E24`
 - `color`:Badge右侧底色，这里使用Fuwari暗色背景底色`181E24`
