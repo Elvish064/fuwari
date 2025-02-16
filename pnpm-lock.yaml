@@ -41,7 +41,7 @@ importers:
       '@iconify-json/material-symbols':
         specifier: ^1.2.5
         version: 1.2.5
-       '@iconify-json/mdi':
+      '@iconify-json/mdi':
         specifier: ^1.2.3
         version: 1.2.3
       '@iconify/svelte':
