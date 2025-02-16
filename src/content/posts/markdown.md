@@ -5,7 +5,8 @@ description: 一篇简单的 Markdown 博客示例
 tags: [Markdown, 博客, 演示]  
 category: 示例  
 series: 示例  
-draft: false  
+draft: false
+pinned: true  
 ---
 
 # 一级标题  
