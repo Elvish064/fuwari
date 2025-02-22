@@ -9,12 +9,13 @@ import Series from './Series.astro'
 
 interface Props { 
   class?: string
+  headings? : MarkdownHeading[]
   series?: string
 }
 
 const className = Astro.props.class
 const series = Astro.props.series 
-
+const headings = Astro.props.headings
 ---
 <div id="sidebar" class:list={[className, "w-full"]}>
     <div class="flex flex-col w-full gap-4 mb-4">
