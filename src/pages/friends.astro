@@ -3,41 +3,43 @@
 import MainGridLayout from '../layouts/MainGridLayout.astro'
 
 import { getEntry } from 'astro:content'
-import { i18n } from '../i18n/translation'
-import I18nKey from '../i18n/i18nKey'
 import Markdown from '@components/misc/Markdown.astro'
+import I18nKey from '../i18n/i18nKey'
+import { i18n } from '../i18n/translation'
 
 const friendsPost = await getEntry('spec', 'friends')
 
 const { Content } = await friendsPost.render()
 const items = [
-  {  
-    title: 'Astro',  
-    imgurl: 'https://avatars.githubusercontent.com/u/44914786?s=48&v=4',  
-    desc: 'The web framework for content-driven websites. ⭐️ Star to support our work!',  
-    siteurl: 'https://github.com/withastro/astro',  
-    tags: ['Framework'],  
+  {
+    title: 'Astro',
+    imgurl: 'https://avatars.githubusercontent.com/u/44914786?s=48&v=4',
+    desc: 'The web framework for content-driven websites. ⭐️ Star to support our work!',
+    siteurl: 'https://github.com/withastro/astro',
+    tags: ['Framework'],
   },
-  {  
-    title: 'Cloud Genshin Impact',  
-    imgurl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDsYguNIFofBpbp5ERfKz1TZwGwL2cCl2mkjUm2O5bbQ&s',  
-    desc: 'Genshin Impact, Launch!',  
-    siteurl: 'https://ys.mihoyo.com/cloud',  
-    tags: ['Game'],  
+  {
+    title: 'Cloud Genshin Impact',
+    imgurl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDsYguNIFofBpbp5ERfKz1TZwGwL2cCl2mkjUm2O5bbQ&s',
+    desc: 'Genshin Impact, Launch!',
+    siteurl: 'https://ys.mihoyo.com/cloud',
+    tags: ['Game'],
   },
-  {  
-    title: 'Wordle',  
-    imgurl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzVaoSDXj8OW3tumlC2MgbVJWSoMIgtpKHw&s',  
-    desc: 'The wordle game!',  
-    siteurl: 'https://wordly.org',  
-    tags: ['Game'],  
+  {
+    title: 'Wordle',
+    imgurl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShzVaoSDXj8OW3tumlC2MgbVJWSoMIgtpKHw&s',
+    desc: 'The wordle game!',
+    siteurl: 'https://wordly.org',
+    tags: ['Game'],
   },
-  {  
-    title: 'Handle',  
-    imgurl: 'https://toolb.cn/favicon/handle.antfu.me',  
-    desc: 'A Chinese Hanzi variation of Wordle - 汉字 Wordle',  
-    siteurl: 'https://handle.antfu.me/',  
-    tags: ['Game'],  
+  {
+    title: 'Handle',
+    imgurl: 'https://toolb.cn/favicon/handle.antfu.me',
+    desc: 'A Chinese Hanzi variation of Wordle - 汉字 Wordle',
+    siteurl: 'https://handle.antfu.me/',
+    tags: ['Game'],
   },
 ]
 ---
@@ -79,22 +81,6 @@ const items = [
             </Markdown>
         </div>
     </div>
-    
-<script src="https://giscus.app/client.js"
-        data-repo="Elvish064/fuwari"
-        data-repo-id="R_kgDONjQjEA"
-        data-category="Announcements"
-        data-category-id="DIC_kwDONjQjEM4Clmg1"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
 
 
 </MainGridLayout>

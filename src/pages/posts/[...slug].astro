@@ -1,6 +1,7 @@
 ---
 import path from 'node:path'
 import { getCollection } from 'astro:content'
+import Comment from '@components/comment/index.astro'
 import License from '@components/misc/License.astro'
 import Markdown from '@components/misc/Markdown.astro'
 import I18nKey from '@i18n/i18nKey'
@@ -41,7 +42,9 @@ const jsonLd = {
     url: Astro.site,
   },
   datePublished: formatDateToYYYYMMDD(entry.data.published),
-  inLanguage: (entry.data.lang ? entry.data.lang.replace('_', '-') : siteConfig.lang.replace('_', '-')),
+  inLanguage: entry.data.lang
+    ? entry.data.lang.replace('_', '-')
+    : siteConfig.lang.replace('_', '-'),
   // TODO include cover image here
 }
 ---
@@ -109,6 +112,10 @@ const jsonLd = {
         </div>
     </div>
 
+
+    <Comment post={entry}></Comment>
+
+
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
         <a href={entry.data.nextSlug ? getPostUrlBySlug(entry.data.nextSlug) : "#"}
            class:list={["w-full font-bold overflow-hidden active:scale-95", {"pointer-events-none": !entry.data.nextSlug}]}>
@@ -130,6 +137,7 @@ const jsonLd = {
             </div>}
         </a>
     </div>
+<!-- 
 <script src="https://giscus.app/client.js"
     data-repo="Elvish064/fuwari"
     data-repo-id="R_kgDONjQjEA"
@@ -144,7 +152,8 @@ const jsonLd = {
     data-lang="zh-CN"
     crossorigin="anonymous"
     async>
-</script>    
+</script>
+-->
 
 </MainGridLayout>
 
