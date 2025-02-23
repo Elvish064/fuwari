@@ -94,9 +94,9 @@ export const licenseConfig: LicenseConfig = {
 }
 
 export const commentConfig: CommentConfig = {
-  disqus: {
-    shortname: 'fuwari',
-  },
+  //disqus: {
+  //  shortname: 'fuwari',
+  //},
   // giscus: {
   //   repo: 'moeyua/fuwari',
   //   repoId: 'R_kgDOKy9HOQ',
@@ -111,7 +111,7 @@ export const commentConfig: CommentConfig = {
   //   lang: 'zh-CN',
   //   loading: 'lazy',
   // },
-  // twikoo: {
-  //   envId: 'https://twikoo-tau-flame.vercel.app',
-  // },
+  twikoo: {
+    envId: 'https://elvish-twikoo.netlify.app/.netlify/functions/twikoo',
+  },
 }
