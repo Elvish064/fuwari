@@ -43,7 +43,7 @@ https://shields.io/
 ## 嵌入Fuwari
 这里我选择放入Important的Admonitions，并添加提示文字，置于文章结尾<br>
 示例：
-``` Markdowns
+``` Markdown
 :::important
 ![GitHub last commit](https://img.shields.io/github/last-commit/user/repo?path=...)
 部分信息可能已经过时

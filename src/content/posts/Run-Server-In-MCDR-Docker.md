@@ -202,7 +202,7 @@ WARNING: your terminal doesn't support cursor position requests (CPR).
 eula=true
 ```
 然后根据需要编辑`server.properties`
-``` properties
+``` yaml
 #Minecraft server properties
 #Thu Xxx xx xx:xx:xx CST 2024
 # 一般只需要修改如下几项：
@@ -234,7 +234,7 @@ start_command: java -Xms1G -Xmx8G -jar fabric-server-mc.1.21-loader.0.16.9-launc
 
 <details markdown='1'><summary><u>展开/收起 控制台示例</u></summary>
 
-``` Bash
+```
 $ sudo docker-compose up -d
 [+] Running 1/0
  ✔ Container mcdr  Created                                                                              0.0s
