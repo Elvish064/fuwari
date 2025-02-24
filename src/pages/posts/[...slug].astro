@@ -112,9 +112,9 @@ const jsonLd = {
         </div>
     </div>
 
-
+     <!---   
     <Comment post={entry}></Comment>
-
+     -->
 
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
         <a href={entry.data.nextSlug ? getPostUrlBySlug(entry.data.nextSlug) : "#"}
@@ -137,8 +137,9 @@ const jsonLd = {
             </div>}
         </a>
     </div>
-<!-- 
-<script src="https://giscus.app/client.js"
+    
+<div class="card-base p-6 mb-4">
+    <script src="https://giscus.app/client.js"
     data-repo="Elvish064/fuwari"
     data-repo-id="R_kgDONjQjEA"
     data-category="Announcements"
@@ -150,10 +151,12 @@ const jsonLd = {
     data-input-position="top"
     data-theme="preferred_color_scheme"
     data-lang="zh-CN"
+    data-loading="lazy"
     crossorigin="anonymous"
     async>
 </script>
--->
+</div>
+
 
 </MainGridLayout>
 
