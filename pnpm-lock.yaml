@@ -23,6 +23,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.2
         version: 5.1.2(astro@4.16.13(@types/node@22.8.2)(lightningcss@1.27.0)(rollup@2.79.2)(sass@1.80.4)(stylus@0.63.0)(terser@5.36.0)(typescript@5.6.3))(tailwindcss@3.4.14)
+      '@fastify/deepmerge':
+        specifier: ^2.0.2
+        version: 2.0.2
       '@fontsource-variable/jetbrains-mono':
         specifier: ^5.1.1
         version: 5.1.1
@@ -77,6 +80,9 @@ importers:
       mdast-util-to-string:
         specifier: ^4.0.0
         version: 4.0.0
+      open-graph-scraper:
+        specifier: ^6.9.0
+        version: 6.9.0
       overlayscrollbars:
         specifier: ^2.10.0
         version: 2.10.0
@@ -86,6 +92,9 @@ importers:
       photoswipe:
         specifier: ^5.4.4
         version: 5.4.4
+      punycode:
+        specifier: ^2.3.1
+        version: 2.3.1
       reading-time:
         specifier: ^1.5.0
         version: 1.5.0
@@ -134,6 +143,9 @@ importers:
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
+      unified:
+        specifier: ^11.0.5
+        version: 11.0.5
       unist-util-visit:
         specifier: ^5.0.0
         version: 5.0.0
@@ -153,6 +165,9 @@ importers:
       '@types/mdast':
         specifier: ^4.0.4
         version: 4.0.4
+      '@types/punycode':
+        specifier: ^2.1.4
+        version: 2.1.4
       '@types/sanitize-html':
         specifier: ^2.13.0
         version: 2.13.0
@@ -1028,6 +1043,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@fastify/deepmerge@2.0.2':
+    resolution: {integrity: sha512-3wuLdX5iiiYeZWP6bQrjqhrcvBIf0NHbQH1Ur1WbHvoiuTYUEItgygea3zs8aHpiitn0lOB8gX20u1qO+FDm7Q==}
+
   '@fontsource-variable/jetbrains-mono@5.1.1':
     resolution: {integrity: sha512-V+1aRFRvuZ66PpO30s8l/2aADKzpV9VRsO3kSZE+rTMvi4vab3cUcPHMN2z+wAvjkYJO71Yf+g3/Y6pSMmQpVQ==}
 
@@ -1679,6 +1697,9 @@ packages:
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
 
+  '@types/punycode@2.1.4':
+    resolution: {integrity: sha512-trzh6NzBnq8yw5e35f8xe8VTYjqM3NE7bohBtvDVf/dtUer3zYTLK1Ka3DG3p7bdtoaOHZucma6FfVKlQ134pQ==}
+
   '@types/resolve@1.17.1':
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
 
@@ -1972,6 +1993,9 @@ packages:
 
   character-reference-invalid@2.0.1:
     resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==}
+
+  chardet@2.0.0:
+    resolution: {integrity: sha512-xVgPpulCooDjY6zH4m9YW3jbkaBe3FKIAvF5sj5t7aBNsVl2ljIE+xwJ4iNgiDZHFQvNIpjdKdVOQvvk5ZfxbQ==}
 
   cheerio-select@2.1.0:
     resolution: {integrity: sha512-9v9kG0LvzrlcungtnJtpGNxY+fzECQKhK4EGJX2vByejiMX84MFNQw4UxPJl3bFbTMw+Dfs37XaIkCwTZfLh4g==}
@@ -3457,6 +3481,10 @@ packages:
   oniguruma-to-js@0.4.3:
     resolution: {integrity: sha512-X0jWUcAlxORhOqqBREgPMgnshB7ZGYszBNspP+tS9hPD3l13CdaXcHbgImoHUHlrvGx/7AvFEkTRhAGYh+jzjQ==}
 
+  open-graph-scraper@6.9.0:
+    resolution: {integrity: sha512-1KoV5v6GT0/MqlryrVGQROhEAD4u8wC3VjYOxsnhj3mWeGJ6N6nF/rbrcZREFr+kiYm9I5LMrzdK9t9hBMbL2Q==}
+    engines: {node: '>=18.0.0'}
+
   open@8.4.2:
     resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
     engines: {node: '>=12'}
@@ -3935,6 +3963,10 @@ packages:
 
   punycode.js@2.3.1:
     resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
+
+  punycode@2.3.1:
+    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
   queue-microtask@1.2.3:
@@ -4513,8 +4545,8 @@ packages:
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
-  undici@6.20.1:
-    resolution: {integrity: sha512-AjQF1QsmqfJys+LXfGTNum+qw4S88CojRInG/6t31W/1fk6G59s92bnAvGz5Cmur+kQv2SURXEvvudLmbrE8QA==}
+  undici@6.21.1:
+    resolution: {integrity: sha512-q/1rj5D0/zayJB2FraXdaWxbhWiNKDvu8naDT2dl1yTlvJp4BLtOcp2a5BvgGNQpYYJzau7tf1WgKv3b+7mqpQ==}
     engines: {node: '>=18.17'}
 
   unicode-canonical-property-names-ecmascript@2.0.1:
@@ -5878,6 +5910,8 @@ snapshots:
   '@esbuild/win32-x64@0.21.5':
     optional: true
 
+  '@fastify/deepmerge@2.0.2': {}
+
   '@fontsource-variable/jetbrains-mono@5.1.1': {}
 
   '@fontsource/roboto@5.1.0': {}
@@ -6547,6 +6581,8 @@ snapshots:
 
   '@types/parse-json@4.0.2': {}
 
+  '@types/punycode@2.1.4': {}
+
   '@types/resolve@1.17.1':
     dependencies:
       '@types/node': 22.8.2
@@ -6981,6 +7017,8 @@ snapshots:
 
   character-reference-invalid@2.0.1: {}
 
+  chardet@2.0.0: {}
+
   cheerio-select@2.1.0:
     dependencies:
       boolbase: 1.0.0
@@ -7001,7 +7039,7 @@ snapshots:
       parse5: 7.2.1
       parse5-htmlparser2-tree-adapter: 7.1.0
       parse5-parser-stream: 7.1.2
-      undici: 6.20.1
+      undici: 6.21.1
       whatwg-mimetype: 4.0.0
 
   chokidar@3.6.0:
@@ -8825,6 +8863,13 @@ snapshots:
     dependencies:
       regex: 4.3.3
 
+  open-graph-scraper@6.9.0:
+    dependencies:
+      chardet: 2.0.0
+      cheerio: 1.0.0
+      iconv-lite: 0.6.3
+      undici: 6.21.1
+
   open@8.4.2:
     dependencies:
       define-lazy-prop: 2.0.0
@@ -9283,6 +9328,8 @@ snapshots:
       once: 1.4.0
 
   punycode.js@2.3.1: {}
+
+  punycode@2.3.1: {}
 
   queue-microtask@1.2.3: {}
 
@@ -10093,7 +10140,7 @@ snapshots:
 
   undici-types@6.19.8: {}
 
-  undici@6.20.1: {}
+  undici@6.21.1: {}
 
   unicode-canonical-property-names-ecmascript@2.0.1: {}
 

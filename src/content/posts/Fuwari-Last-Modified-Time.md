@@ -16,6 +16,9 @@ lang: 'zh_CN'
 虽然文章标题下方有关于**上次修改时间**的显示，但是不太醒目且需要手动更改<br>
 由于Fuwari是基于Astro编写的，后尝试按照[Astro官方文档](https://docs.astro.build/zh-cn/recipes/modified-time/)进行修改，未成功<br>
 最后想到了[Shields徽章](https://shields.io)
+
+https://shields.io/
+
 ::github{repo="Badges/shields"}
 可以获取Github Last Commit时间：
 ![GitHub last commit](https://img.shields.io/github/last-commit/Elvish064/fuwari)
