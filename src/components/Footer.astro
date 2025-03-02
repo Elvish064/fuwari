@@ -21,8 +21,47 @@ import { url } from '../utils/url-utils'
     </div>
 
 <!--运行时间 -->
-    <script type="text/javascript">function runtime(){const t=new Date("10/01/2024 08:00:00"),n=new Date,s=n-t,e=Math.floor(s/1e3),o=Math.floor(e/86400),i=Math.floor(e%86400/3600),a=Math.floor(e%3600/60),r=e%60;document.getElementById("runningtime").innerHTML=`⭐本站已运行: ${o}天${i}小时${a}分${r}秒 `}setInterval(runtime,1e3)</script>
-    <div class="transition text-50 text-sm text-center hidden md:block"><p id="runningtime"> </p></div>
+<script type="text/javascript">
+    function runtime() {
+        const startDate = new Date("10/01/2024 08:00:00");
+        const currentDate = new Date();
+        const diff = currentDate - startDate;
+
+        const seconds = Math.floor(diff / 1000);
+        const days = Math.floor(seconds / 86400);
+        const hours = Math.floor((seconds % 86400) / 3600);
+        const minutes = Math.floor((seconds % 3600) / 60);
+        const secs = seconds % 60;
+
+        const years = Math.floor(days / 365);
+        const months = Math.floor((days % 365) / 30);
+        const remainingDays = days % 30;
+
+        let runtimeString = '⭐本站已运行: ';
+        if (years > 0) {
+            runtimeString += `${years}年`;
+        }
+        if (months > 0) {
+            runtimeString += `${months}月`;
+        }
+        if (remainingDays > -1) {
+            runtimeString += `${remainingDays}天`;
+        }
+        if (hours > -1) {
+            runtimeString += `${hours}小时`;
+        }
+        if (minutes > -1) {
+            runtimeString += `${minutes}分`;
+        }
+        if (secs > -1) {
+            runtimeString += `${secs}秒`;
+        }
+
+        document.getElementById("runningtime").innerHTML = runtimeString;
+    }
+    setInterval(runtime, 1000);
+</script>
+<div class="transition text-50 text-sm text-center hidden md:block"><p id="runningtime"> </p></div>
 
 <!--右侧备案等信息 -->
     <div class="transition text-50 text-sm max-md:text-right mt-2">
