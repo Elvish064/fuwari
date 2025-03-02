@@ -162,13 +162,13 @@ const jsonLd = {
                 if (minutes > -1 && minutes < 10) {
                     runtimeString += `0${minutes}分`;
                 }
-                if (minutes > 10) {
+                if (minutes > 9) {
                     runtimeString += `${minutes}分`;
                 }
                 if (secs > -1 && secs < 10) {
                     runtimeString += `0${secs}秒`;
                 }
-                if (secs > 10) {
+                if (secs > 9) {
                     runtimeString += `${secs}秒`;
                 }
         
@@ -176,14 +176,13 @@ const jsonLd = {
             }
             setInterval(runtime, 1000);
         </script>
-        <div class="card-base p-6 mb-4">
+        <div class="card-base p-1 mb-4">
             <script is:inline>...</script>
-            <div class="flex items-center gap-2">
-                <!-- 修改后的图标容器 -->
+            <div class="flex items-center gap-0">
+                <!-- 修正后的图标容器 -->
                 <div class="transition h-8 w-8 rounded-md 
-                           bg-[var(--primary)/10] 
+                           bg-black/5 dark:bg-white/10 
                            text-[var(--primary)]
-                           dark:bg-[var(--primary)/20]
                            flex items-center justify-center mr-1">
                     <Icon name="material-symbols:history-rounded" class="text-[1.25rem]"/>
                 </div>
