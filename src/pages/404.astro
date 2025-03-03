@@ -8,14 +8,14 @@ import { Icon } from 'astro-icon/components'
     <div class="card-base z-10 px-9 py-6 relative w-full text-black/75 dark:text-white/75">
       <div class="flex items-center gap-4">
         <h1 class="text-[5rem] font-bold">404</h1>
-        <p class="text-[2rem]">Not found</p>
+        <p class="text-[2rem]">Not found Meow~</p>
       </div>
       <a href={url("/")} class:list={["font-bold overflow-hidden active:scale-95"]}>
-        <div class="btn-card max-w-fit rounded-2xl h-[3.75rem] px-4 flex items-center justify-start gap-2">
+        <div class="btn-card max-w-fit rounded-2xl h-[3.75rem] px-4 flex items-center justify-start gap-2 bg-black/5 dark:bg-white/10">
+          <Icon name="material-symbols:chevron-left-rounded" class="text-[1.75rem] text-black/75 dark:text-white/75" />
           <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap text-black/75 dark:text-white/75">
-            Return to top page
+            Return to home page
           </div>
-          <Icon name="material-symbols:chevron-right-rounded" class="text-[1.75rem] text-black/75 dark:text-white/75" />
         </div>
       </a>
     </div>
