@@ -102,5 +102,12 @@ export async function getPostSeries(
     )
   })) as unknown as { body: string; data: BlogPostData; slug: string }[]
 
+  // 按发布时间倒序排列（最新在前）
+  posts.sort((a, b) => {
+    const dateA = new Date(a.data.published)
+    const dateB = new Date(b.data.published)
+    return dateB.getTime() - dateA.getTime()  // 修改这里
+  })
+
   return posts
 }
