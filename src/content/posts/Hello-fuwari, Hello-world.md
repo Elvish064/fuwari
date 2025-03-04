@@ -1,6 +1,7 @@
 ---
 title: Hello fuwari🌟, Hello world🌎
 published: 2025-01-05
+updated: 2025-03-04 17:09:30
 description: "A new blog,a new start."
 image: "https://i.stardots.io/elvish/winter.jpg"
 tags: ["Fuwari", "杂谈", "经验"]
