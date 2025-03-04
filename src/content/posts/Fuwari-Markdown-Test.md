@@ -1,6 +1,7 @@
 ---
 title: "[Fuwari]适用的Markdown语法测试"
 published: 2025-01-21
+updated: 2025-01-21
 description: "如题"
 image: ""
 tags: ["Fuwari"]

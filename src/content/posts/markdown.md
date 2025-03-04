@@ -1,6 +1,7 @@
 ---
 title: Markdown 示例  
 published: 2023-10-01  
+updated: 2023-10-01
 description: 一篇简单的 Markdown 博客示例  
 tags: [Markdown, 博客, 演示]  
 category: 示例  

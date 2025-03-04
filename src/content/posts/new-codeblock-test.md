@@ -1,6 +1,7 @@
 ---
 title: "[Fuwari]适用的Markdown Codeblock语法测试"
 published: 2025-03-04
+updated: 2025-03-04
 description: "如题"
 image: ""
 tags: ["Fuwari"]

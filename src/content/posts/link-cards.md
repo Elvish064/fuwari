@@ -1,6 +1,7 @@
 ---  
 title: '[Fuwari]链接卡片功能示例'  
-published: 2025-02-23T00:00:00+00:00  
+published: 2025-02-23T00:00:00+00:00
+updated: 2025-02-23  
 description: 链接卡片功能使用指南  
 tags: [Markdown, 博客, 演示]  
 category: 示例  
