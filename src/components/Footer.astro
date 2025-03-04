@@ -4,11 +4,11 @@ import { profileConfig } from '../config'
 import { url } from '../utils/url-utils'
 ---
 
-<div class="card-base max-w-[var(--page-width)] min-h-[4.5rem] rounded-b-none mx-auto flex items-center px-6 justify-between mb-4">
+<div class="card-base max-w-[var(--page-width)] min-h-[4.5rem] rounded-b-none mx-auto flex items-center px-6 justify-between mt-4">
 
 <!--左侧信息 -->
     <div class="transition text-50 text-sm max-md:text-left mt-2">
-        © 2024-2025 {profileConfig.name}. All Rights Reserved. /
+        © 2025 {profileConfig.name}. All Rights Reserved. /
         <a class="link text-[var(--primary)] font-medium" target="_blank" href={url('rss.xml')}>RSS</a>
     <!--
         <a class="link text-[var(--primary)] font-medium" target="_blank" href={url('sitemap-index.xml')}>Sitemap</a>
@@ -65,8 +65,9 @@ import { url } from '../utils/url-utils'
 
 <!--右侧备案等信息 -->
     <div class="transition text-50 text-sm max-md:text-right mt-2">
-        <a class="link text-[var(--primary)] font-medium" target="_blank" href={'https://beian.miit.gov.cn'}></a>
+        <!-- <a class="link text-[var(--primary)] font-medium" target="_blank" href={'https://beian.miit.gov.cn'}></a>
         <br>
+        -->
         <a class="link text-[var(--primary)] font-medium" target="_blank" href={'https://icp.gov.moe/?keyword=20250030'}>萌ICP备20250030号</a>
     </div>
 </div>
