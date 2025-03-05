@@ -5,7 +5,7 @@
 ---
 ### 🎯 Who I Am
 
-✍️ <span  style="color:#6b66cc; "> **Student** </span> in China 🇨🇳  
+✍️ <span  style="color:#6b66cc; "> **Student** </span> in China [🇨🇳]  
 🍻 **Creative Content Creator** on _BiliBili_   
 🛠️ **Minecraft Redstone Technical Specialist**   
 😺 **~~Strinova Nekomusume~~**   
@@ -27,7 +27,7 @@
 🤖 **Tech:** ACGN Culture | Game Soundtracks | DIY Hardware Projects  
 
 ---
-### 🌐 Footprint
+### 🗺️ Footprint
 
 <div width="100%" style="overflow-x: auto;"> 
   <svg width="426.29" height="211.15599999999998" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 426.29 211.156">
@@ -58,6 +58,10 @@
 💽 ~~NVIDIA RTX 5090~~
 
 ---
+### 🌐 Languages
+- [🇨🇳] **Chinese**
+- [🇺🇸] English
+- [🇯🇵] Japanese (a little)
 
 ### ✉️ Contact Me
 - Just press the **Email** Button on the ◀️left side or 🔽below
