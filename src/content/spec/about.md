@@ -2,6 +2,7 @@
 
 ## 👋 Hi, My name is **Elvish**
 
+---
 ### 🎯 Who I Am
 
 ✍️ <span  style="color:#6b66cc; "> **Student** </span> in China 🇨🇳  
@@ -10,12 +11,14 @@
 😺 **~~Strinova Nekomusume~~**   
 📻 **Amateur Radio Enthusiast**, my code: (pending)   
 
+---
 ### 🚀 Current Focus
 
 ⚡ **Mastering:** Python | Web Development (not really)  
 📚 **Learning Path:** SQL | Frontend Framework (Tailwind/Vue)  
 💡 **Exploring:** IoT Hardware Development  
 
+---
 ### ❤️ My Passions
 
 🏀 **Sports:** Basketball | Cycling  
@@ -23,6 +26,7 @@
 🎨 **Creativity:** Piano | CG Art | Photography  
 🤖 **Tech:** ACGN Culture | Game Soundtracks | DIY Hardware Projects  
 
+---
 ### 🌐 Footprint
 
 <div width="100%" style="overflow-x: auto;"> 
@@ -48,7 +52,7 @@
 </svg>
 </div>
 
-
+---
 ### 📝 Wishlist
 🕶️ Meta Quest 3  
 💽 ~~NVIDIA RTX 5090~~
