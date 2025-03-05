@@ -1,6 +1,6 @@
 # 🌱 About Me
 
-## 👋 Hi, My name is Elvish
+## 👋 Hi, My name is **Elvish**
 
 ### 🎯 Who I Am
 
@@ -57,4 +57,4 @@
 
 ### ✉️ Contact Me
 - Just press the **Email** Button on the ◀️left side or 🔽below
-- ~~Or you can call my sign on the radio frequency **144MHz~146MHz** if you can~~
+- ~~Or you can call my code on the radio frequency **144MHz~146MHz** if you can~~
