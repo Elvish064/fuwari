@@ -6,7 +6,7 @@ description: "Announcement"
 image: ""
 tags: ["Announcement"]
 category: Announcement
-draft: true
+draft: false
 lang: 'zh_CN'
 pinned: true
 ---
@@ -84,7 +84,7 @@ pinned: true
 ### 1. Technical Framework & Resources  
 #### 1.1 Blog Framework 🕸️  
 - **Core Frameworks**:  
-  [Link1]  
+  ::github{repo="saicaca/fuwari"} 
   [Link2]  
 - **Customizations**: Adapted from the original framework's [PR](Link1) and modifications by the following bloggers (special thanks! 🙏):  
   - Added features: Post pinning, font optimization, comment system, blogroll module, Expressive Code highlighting, series navigation  
