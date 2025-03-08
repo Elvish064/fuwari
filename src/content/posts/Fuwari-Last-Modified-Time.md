@@ -1,5 +1,5 @@
 ---
-title: "[Fuwari]使用Shields Badges为博客添加最后编辑时间"
+title: "[Fuwari]使用Shields Badges为博客添加最后编辑时间(已弃用)"
 published: 2025-01-27
 updated: 2025-01-27
 description: "仅适用于托管于Github的Fuwari"
@@ -10,6 +10,10 @@ series: Fuwari
 draft: false
 lang: 'zh_CN'
 ---
+
+:::important
+该方法已弃用，新方法见[]()
+:::
 
 ## 引入
 就目前而言Fuwari还没有**文章最后编辑时间**的显示<br>
