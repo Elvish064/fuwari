@@ -10,36 +10,78 @@ draft: true
 lang: 'zh_CN'
 pinned: true
 ---
+<style>
+.language-container {
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.language-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  padding: 20px;
+}
+
+.language-section.active {
+  position: relative;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* 保持原有按钮样式 */
+.flex.items-center.justify-center.gap-4 {
+  margin-bottom: 1rem;
+}
+.btn-card {
+  transition: transform 0.2s, background 0.2s;
+}
+.btn-card:hover {
+  background: rgba(0,0,0,0.1) !important;
+}
+.dark .btn-card:hover {
+  background: rgba(255,255,255,0.1) !important;
+}
+</style>
+
+
 
 <div class="flex items-center justify-center gap-4">
-  <a href="#en" class="font-bold overflow-hidden active:scale-95">
+  <a href="#en" onclick="switchLanguage('en')" class="font-bold overflow-hidden active:scale-95">
     <div class="btn-card max-w-fit rounded-md h-[2.75rem] px-4 flex items-center justify-start gap-2 bg-black/5 dark:bg-white/10">
       <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap text-[var(--primary)]/75 dark:text-[var(--primary)]/75">
-    English
+        English
       </div>
     </div>
   </a>
   <div class="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
-  <a href="#zh" class="font-bold overflow-hidden active:scale-95">
+  <a href="#zh" onclick="switchLanguage('zh')" class="font-bold overflow-hidden active:scale-95">
     <div class="btn-card max-w-fit rounded-md h-[2.75rem] px-4 flex items-center justify-start gap-2 bg-black/5 dark:bg-white/10">
       <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap text-[var(--primary)]/75 dark:text-[var(--primary)]/75">
-    中文
+        中文
       </div>
     </div>
   </a>
-    <div class="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
-  <a href="#jp" class="font-bold overflow-hidden active:scale-95">
+  <div class="h-6 w-px bg-gray-300 dark:bg-gray-600"></div>
+  <a href="#jp" onclick="switchLanguage('jp')" class="font-bold overflow-hidden active:scale-95">
     <div class="btn-card max-w-fit rounded-md h-[2.75rem] px-4 flex items-center justify-start gap-2 bg-black/5 dark:bg-white/10">
       <div class="overflow-hidden transition overflow-ellipsis whitespace-nowrap text-[var(--primary)]/75 dark:text-[var(--primary)]/75">
-    日本語
+        日本語
       </div>
     </div>
   </a>
-    </div>
+</div>
 
-
-<a name="en"></a>
-# 📌 Pinned Announcement  
+<div class="language-container show-en">
+  <div id="en-section" class="language-section">
+    # 📌 Pinned Announcement  
 
 ## ⚠️ Browsing Tips  
 1. **Display Recommendation**: For optimal layout, use a larger screen or adjust zoom level (≥100%) 💻  
@@ -123,8 +165,10 @@ Content is provided for educational purposes only. We are not liable for any los
 
 ---
 
-<a name="zh"></a>
-# 🧾 置顶公告  
+  </div>
+  
+  <div id="zh-section" class="language-section">
+    # 🧾 置顶公告  
 
 ## ⚠️ 浏览提示
 1. **屏幕显示建议**：推荐使用较大屏幕或适当调整页面缩放比例（≥100%）以获得最佳浏览效果 💻  
@@ -206,8 +250,10 @@ Content is provided for educational purposes only. We are not liable for any los
 
 ---
 
-<a name="jp"></a>
-
+  </div>
+  
+  <div id="jp-section" class="language-section">
+    
 # 📌 固定告知  
 
 ## ⚠️ 閲覧時の注意  
@@ -287,3 +333,44 @@ Content is provided for educational purposes only. We are not liable for any los
 
 ## 🕒 更新履歴  
 （必要に応じて追記）  
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // 默认显示中文
+    switchLanguage('zh');
+});
+
+function switchLanguage(lang) {
+    const container = document.querySelector('.language-container');
+    const currentActive = container.querySelector('.language-section.active');
+    const newActive = document.getElementById(`${lang}-section`);
+    
+    if (currentActive) {
+        // 淡出当前内容
+        currentActive.style.position = 'absolute';
+        currentActive.classList.remove('active');
+    }
+    
+    if (newActive) {
+        // 计算新内容高度
+        const tempPosition = newActive.style.position;
+        newActive.style.position = 'relative';
+        const targetHeight = newActive.scrollHeight;
+        newActive.style.position = tempPosition;
+        
+        // 设置容器高度
+        container.style.height = `${targetHeight}px`;
+        
+        // 显示新内容
+        newActive.style.position = 'relative';
+        newActive.classList.add('active');
+        
+        // 动画结束后重置容器高度
+        setTimeout(() => {
+            container.style.height = '';
+        }, 300);
+    }
+}
+</script>
