@@ -1,8 +1,8 @@
 ---
-title: "Announcement"
+title: "[Pinned]Announcement/置顶公告/トップのお知らせ"
 published: 2025-03-06 16:02:47
 updated: 2025-03-06 16:02:47
-description: "Announcement"
+description: "README"
 image: ""
 tags: ["Announcement"]
 category: Announcement
@@ -84,29 +84,32 @@ pinned: true
 ### 1. Technical Framework & Resources  
 #### 1.1 Blog Framework 🕸️  
 - **Core Frameworks**:  
-  ::github{repo="saicaca/fuwari"} 
-  [Link2]  
-- **Customizations**: Adapted from the original framework's [PR](Link1) and modifications by the following bloggers (special thanks! 🙏):  
+::github{repo="saicaca/fuwari"} 
+https://astro.build/  
+- **Customizations**: Adapted from the original framework's [PR](https://github.com/saicaca/fuwari/pulls) and modifications by the following bloggers (special thanks! 🙏):  
   - Added features: Post pinning, font optimization, comment system, blogroll module, Expressive Code highlighting, series navigation  
-  - Bloggers' Homepage:  
-    [Link1]  
-    [Link2]  
+  - Bloggers' Homepage: 
+  
+https://blog.aulypc0x0.online/
+
+https://ikamusume7.org/
 
 #### 1.2 Deployment Service 💾  
-- **Hosting Platform**: Cloudflare Pages  
-- **Deployment Guide**: [Link1]  
+- **Hosting Platform**: [Cloudflare Pages](https://pages.cloudflare.com/)
 
 #### 1.3 Comment System 💬  
 - Powered by Giscus (GitHub Discussions integration). A GitHub account is required to comment.  
-- Official Project: [Link1]  
+- Official Project: [Giscuz](https://giscus.app/)
+
+
 
 #### 1.4 Font Resources ❇️  
 - **Primary Font**: Extracted from the game *Blue Archive*. Credits to the open-source project 🎮  
-- Font Project: [Link1]  
+- Font Project: [vitepress-theme-bluearchive](https://github.com/Alittfre/vitepress-theme-bluearchive)
 
 #### 1.5 Media Assets 🖼️  
-- **Images**: Sourced from Pixiv / X (with original creator links)  
-- **Videos**: Embedded from Bilibili / YouTube (click to view original sources)  
+- **Images**: Sourced from [Pixiv](https://pixiv.net/) / [X](https://x.com) (with original creator links)  
+- **Videos**: Embedded from [Bilibili](https://bilibili.com) / [YouTube](https://youtube.com) (click to view original sources)  
 
 ---
 
@@ -131,13 +134,13 @@ pinned: true
 1. **Writing Style**: Articles focus on technical tutorials, prioritizing utility over literary flair. 🤖  
 2. **Content Timeliness**: Technical guides may become outdated. Check the "Last Updated" timestamp and verify by yourself. ⏳  
 3. **Feedback & Corrections**:  
-   - Found an error & bug? Submit fixes via **email**, [GitHub Issues](Link), or comments. 🐛  
+   - Found an error & bug? Submit fixes via **email** or comments. 🐛  
    - High-quality suggestions will be prioritized for updates. 💡  
 
 ---  
 
 ## 🌟 Support & Community  
-1. **Community Channels**: Join our [QQ Group](Link) or [Telegram Group](Link) for discussions. 🌈  
+1. **Community Channels**: Join our [QQ Group]() or [Telegram Group]() for discussions. 🌈  
 2. **Support Us**: If this site helps you, share it with others who might benefit! 💖  
 
 ---  
@@ -160,7 +163,7 @@ Content is provided for educational purposes only. We are not liable for any los
 
 <br/>  
 
-# 🧾 置顶公告  
+# 📌 置顶公告  
 
 ## ⚠️ 浏览提示
 1. **屏幕显示建议**：推荐使用较大屏幕或适当调整页面缩放比例（≥100%）以获得最佳浏览效果 💻  
@@ -173,29 +176,30 @@ Content is provided for educational purposes only. We are not liable for any los
 ### 1. 技术框架与资源
 #### 1.1 博客框架  🕸️
 - 核心框架：  
-  [链接1]  
-  [链接2]  
-- **功能优化**：参考了原框架的[PR](链接1)及以下两位博主的改造方案，特别致谢 🙏  
+::github{repo="saicaca/fuwari"} 
+https://astro.build/ 
+- **功能优化**：参考了原框架的[PR](https://github.com/saicaca/fuwari/pulls)及以下两位博主的改造方案，特别致谢 🙏  
   - 新增功能：文章置顶、字体美化、评论系统、友链模块、Expressive Code 代码高亮、系列文章导航  
   - 博主主页：  
-    [链接1]  
-    [链接2]  
+  
+https://blog.aulypc0x0.online/
+
+https://ikamusume7.org/
 
 #### 1.2 部署服务  💾
-- 托管平台：**Cloudflare Pages**  
-- 部署指南参考：[链接1]  
+- 托管平台：[Cloudflare Pages](https://pages.cloudflare.com/) 
 
 #### 1.3 评论系统 💬
 - 使用了Giscuz支持的评论系统，需要登录GitHub账号以使用
-- 项目官网：[链接1]
+- 项目官网：[Giscuz](https://giscus.app/)
 
 #### 1.4 字体资源 ❇️ 
 - 主字体：基于《Blue Archive》游戏提取的字体文件，感谢开源项目提供支持 🎮  
-- 字体项目：[链接1]  
+- 字体项目：[vitepress-theme-bluearchive](https://github.com/Alittfre/vitepress-theme-bluearchive)
 
 #### 1.5 图片与视频 🖼️ 
-- **图片来源**：Pixiv / X（附原作者发布链接）  
-- **视频来源**：Bilibili / YouTube（内嵌播放器可跳转原链接）  
+- **图片来源**：[Pixiv](https://pixiv.net/) / [X](https://x.com)（附原作者发布链接）  
+- **视频来源**：[Bilibili](https://bilibili.com) / [YouTube](https://youtube.com)（内嵌播放器可跳转原链接）  
 
 
 ### 2. 版权与隐私  🚧
@@ -218,13 +222,13 @@ Content is provided for educational purposes only. We are not liable for any los
 1. **内容风格**：本站文章以技术分享为主，文风偏向实用而非文学性，望理解 🤖    
 2. **内容时效性**：技术类文章可能存在更新延迟，实践前检查文章底部的"最后编辑时间"，并自行验证时效性 ⏳  
 3. **纠错与反馈**：  
-   - 发现错误？欢迎通过 **邮件**、[GitHub Issues](链接) 或评论区提交反馈 🐛  
+   - 发现错误？欢迎通过 **邮件** 或评论区提交反馈 🐛  
    - 优质建议将被优先纳入更新计划 💡  
 ---
 
 
 ## 🌟 支持与社区  
-1. **交流社群**：加入我们的 [QQ 群组](链接) 或 [Telegram群组 ](链接) 来交流讨论 🌈  
+1. **交流社群**：加入我们的 [QQ 群组]() 或 [Telegram群组 ]() 来交流讨论 🌈  
 2. **支持发展**：如果本站对你有帮助，也欢迎分享给身边需要的人~ 💖  
 
 ---
@@ -262,29 +266,30 @@ Content is provided for educational purposes only. We are not liable for any los
 ### 1. 技術フレームワーク  
 #### 1.1 ブログ基盤 🕸️  
 - **コアフレームワーク**：  
-  [リンク1]  
-  [リンク2]  
-- **カスタマイズ**：原フレームワークの[PR](リンク1)及び以下のブロガーの改造案を参考に機能追加（謝辞 🙏）：  
+::github{repo="saicaca/fuwari"} 
+https://astro.build/ 
+- **カスタマイズ**：原フレームワークの[PR](https://github.com/saicaca/fuwari/pulls)及び以下のブロガーの改造案を参考に機能追加（謝辞 🙏）：  
   - 追加機能：記事固定表示、フォント最適化、コメントシステム、相互リンクモジュール、Expressive Codeハイライト、シリーズ記事ナビゲーション  
   - ブロガープロフィール：  
-    [リンク1]  
-    [リンク2]  
+  
+https://blog.aulypc0x0.online/
+
+https://ikamusume7.org/
 
 #### 1.2 デプロイサービス 💾  
-- **ホスティングプラットフォーム**：Cloudflare Pages  
-- **デプロイガイド**：[リンク1]  
+- **ホスティングプラットフォーム**：[Cloudflare Pages](https://pages.cloudflare.com/)   
 
 #### 1.3 コメントシステム 💬  
 - Giscus（GitHub Discussions連携）を採用。コメントにはGitHubアカウントが必要です。  
-- 公式プロジェクト：[リンク1]  
+- 公式プロジェクト：[Giscuz](https://giscus.app/)
 
 #### 1.4 フォントリソース ❇️  
 - **メインフォント**：ゲーム『ブルーアーカイブ』から抽出。オープンソースプロジェクトに謝意 🎮  
-- フォントプロジェクト：[リンク1]  
+- フォントプロジェクト：[vitepress-theme-bluearchive](https://github.com/Alittfre/vitepress-theme-bluearchive)
 
 #### 1.5 メディア資産 🖼️  
-- **画像出典**：Pixiv / X（原作者の公開リンクを付記）  
-- **動画出典**：Bilibili / YouTube（埋め込みプレーヤーで原ページへ遷移可能）  
+- **画像出典**：[Pixiv](https://pixiv.net/) / [X](https://x.com)（原作者の公開リンクを付記）  
+- **動画出典**：[Bilibili](https://bilibili.com) / [YouTube](https://youtube.com)（埋め込みプレーヤーで原ページへ遷移可能）  
 
 ---  
 
@@ -307,13 +312,13 @@ Content is provided for educational purposes only. We are not liable for any los
 1. **執筆スタイル**：技術解説を中心に実用性を重視した構成です。文学的な表現は控えています 🤖  
 2. **情報の鮮度**：技術記事の内容は陳腐化する可能性があります。「最終更新日」を確認の上、ご自身で検証ください ⏳  
 3. **誤字修正要請**：  
-   - 誤りを発見された場合は、**メール**/[GitHub Issues](リンク)/コメントでご連絡ください 🐛  
+   - 誤りを発見された場合は、**メール**/コメントでご連絡ください 🐛  
    - 有益なご提案は優先的に更新反映します 💡  
 
 ---  
 
 ## 🌟 サポート＆コミュニティ  
-1. **交流グループ**：[LINEグループ](リンク) または [Telegramグループ](リンク) で情報交換できます 🌈  
+1. **交流グループ**：[LINEグループ]() または [Telegramグループ]() で情報交換できます 🌈  
 2. **サイト支援**：当サイトがお役に立った場合は、必要な方々へシェアをお願いします 💖  
 
 ---  
