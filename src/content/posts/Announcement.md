@@ -25,32 +25,18 @@ pinned: true
   top: 0;
   left: 0;
   width: 100%;
-  pointer-events: none;
-  padding: 20px;
+  visibility: hidden;  /* 使用visibility替代display */
+  pointer-events: none;  /* 禁用未激活内容的交互 */
 }
 
 .language-section.active {
-  position: relative;
   opacity: 1;
   transform: translateY(0);
+  position: relative;
+  visibility: visible;
   pointer-events: auto;
 }
-
-/* 保持原有按钮样式 */
-.flex.items-center.justify-center.gap-4 {
-  margin-bottom: 1rem;
-}
-.btn-card {
-  transition: transform 0.2s, background 0.2s;
-}
-.btn-card:hover {
-  background: rgba(0,0,0,0.1) !important;
-}
-.dark .btn-card:hover {
-  background: rgba(255,255,255,0.1) !important;
-}
 </style>
-
 
 
 <div class="flex items-center justify-center gap-4">
@@ -80,8 +66,11 @@ pinned: true
 </div>
 
 <div class="language-container show-en">
-  <div id="en-section" class="language-section">
-    # 📌 Pinned Announcement  
+  <div id="en-section" class="language-section active">
+
+<br/>    
+
+# 📌 Pinned Announcement  
 
 ## ⚠️ Browsing Tips  
 1. **Display Recommendation**: For optimal layout, use a larger screen or adjust zoom level (≥100%) 💻  
@@ -158,7 +147,7 @@ Content is provided for educational purposes only. We are not liable for any los
 
 ---  
 
-✨ Thank you for reading! For inquiries, contact us via comments or email. 📬  
+## ✨ Thank you for reading! For inquiries, contact us via comments or email. 📬  
 
 ## 🕒 Changelog  
 *(To be updated as needed)*  
@@ -168,7 +157,10 @@ Content is provided for educational purposes only. We are not liable for any los
   </div>
   
   <div id="zh-section" class="language-section">
-    # 🧾 置顶公告  
+
+<br/>  
+
+# 🧾 置顶公告  
 
 ## ⚠️ 浏览提示
 1. **屏幕显示建议**：推荐使用较大屏幕或适当调整页面缩放比例（≥100%）以获得最佳浏览效果 💻  
@@ -242,7 +234,7 @@ Content is provided for educational purposes only. We are not liable for any los
 
 ---
 
-✨感谢您的阅读！如有问题，欢迎通过评论区或邮件交流 📬  
+## ✨感谢您的阅读！如有问题，欢迎通过评论区或邮件交流 📬  
 
 
 ## 🕒 更新日志  
@@ -254,6 +246,8 @@ Content is provided for educational purposes only. We are not liable for any los
   
   <div id="jp-section" class="language-section">
     
+<br/>     
+
 # 📌 固定告知  
 
 ## ⚠️ 閲覧時の注意  
@@ -329,7 +323,7 @@ Content is provided for educational purposes only. We are not liable for any los
 
 ---  
 
-✨ ご覧いただきありがとうございます！お問い合わせはコメント欄またはメールで 📬  
+## ✨ ご覧いただきありがとうございます！お問い合わせはコメント欄またはメールで 📬  
 
 ## 🕒 更新履歴  
 （必要に応じて追記）  
@@ -337,40 +331,54 @@ Content is provided for educational purposes only. We are not liable for any los
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // 默认显示中文
-    switchLanguage('zh');
-});
-
 function switchLanguage(lang) {
     const container = document.querySelector('.language-container');
-    const currentActive = container.querySelector('.language-section.active');
+    const sections = container.querySelectorAll('.language-section');
     const newActive = document.getElementById(`${lang}-section`);
+    
+    if (!newActive) return;
+
+    // 获取当前激活的部分
+    const currentActive = container.querySelector('.language-section.active');
     
     if (currentActive) {
         // 淡出当前内容
-        currentActive.style.position = 'absolute';
-        currentActive.classList.remove('active');
-    }
-    
-    if (newActive) {
-        // 计算新内容高度
-        const tempPosition = newActive.style.position;
-        newActive.style.position = 'relative';
-        const targetHeight = newActive.scrollHeight;
-        newActive.style.position = tempPosition;
+        currentActive.style.opacity = '0';
+        currentActive.style.transform = 'translateY(20px)';
         
-        // 设置容器高度
-        container.style.height = `${targetHeight}px`;
-        
-        // 显示新内容
-        newActive.style.position = 'relative';
-        newActive.classList.add('active');
-        
-        // 动画结束后重置容器高度
+        // 等待淡出动画完成后再切换
         setTimeout(() => {
-            container.style.height = '';
+            currentActive.classList.remove('active');
+            
+            // 准备新内容
+            newActive.style.opacity = '0';
+            newActive.style.transform = 'translateY(20px)';
+            newActive.classList.add('active');
+            
+            // 触发重排以启动动画
+            void newActive.offsetWidth;
+            
+            // 淡入新内容
+            newActive.style.opacity = '1';
+            newActive.style.transform = 'translateY(0)';
+            
+            // 调整容器高度
+            container.style.height = `${newActive.scrollHeight}px`;
+            
+            setTimeout(() => {
+                container.style.height = 'auto';
+            }, 300);
         }, 300);
+    } else {
+        // 首次加载直接显示
+        newActive.classList.add('active');
+        newActive.style.opacity = '1';
+        newActive.style.transform = 'translateY(0)';
     }
 }
+
+// 页面加载时默认显示英文
+document.addEventListener('DOMContentLoaded', function() {
+    switchLanguage('en');
+});
 </script>
