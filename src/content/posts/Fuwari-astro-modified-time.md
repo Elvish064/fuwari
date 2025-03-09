@@ -11,8 +11,16 @@ draft: true
 lang: 'zh_CN'
 ---
 
+# 思路
 Astro官方给出的方法是：
 
 https://docs.astro.build/zh-cn/recipes/modified-time/
 
-基本上按照该文档来就行，
+参照该文档，做了时间计算逻辑和适配Fuwari的ui
+
+# 实现
+
+## 1.安装[Day.js](https://www.npmjs.com/package/dayjs)包
+```
+
+```
