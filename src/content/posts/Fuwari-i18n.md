@@ -1,5 +1,5 @@
 ---
-title: "[Fuwari]简陋的单页面伪i18n实现"
+title: "[Fuwari]简易的单页面伪i18n实现"
 published: 2025-03-08
 updated: 2025-03-08
 description: "基于Markdown渲染的HTML"
@@ -17,6 +17,8 @@ lang: 'zh_CN'
  但是似乎Fuwari的作者并没有打算适配i18n[^1]
 
  [^1]:https://github.com/saicaca/fuwari/issues/145
+
+# 方案
 
  不过还好Markdonwn可以解析一些简单的html代码
  
@@ -162,4 +164,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
  ```
+
+:::note
+这段代码仅在Fuwari框架中测试能正常渲染，置于别处可能无法正确渲染
+:::
+# 效果
+
 效果可以参考我的 [关于](https://elvish.me/about/)
