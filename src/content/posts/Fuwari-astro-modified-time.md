@@ -1,6 +1,6 @@
 ---
 title: "[Fuwari]在文末添加最后修改时间"
-published: 2025-03-08
+published: 2025-03-13
 updated: 2025-03-13 13:47:00
 description: "根据Astro docs介绍的方法实现"
 image: ""
@@ -69,7 +69,7 @@ import { remarkModifiedTime } from './src/plugins/remark-modified-time.mjs'
 
 这里简单做了一个适配的ui组件，置于文章末尾，**时间为倒数**（即距离现在过去了多少时间）
 
-```js title="src/pages/posts/[slug].astro" ins={2-3,12,29-31,120-195} collapse={4-10,14-26,34-119}
+```js title="src/pages/posts/[slug].astro" ins={2-3,12,29-31,120-194} collapse={4-10,14-26,34-119}
 ···
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
