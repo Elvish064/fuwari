@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content'
 import Comment from '@components/comment/index.astro'
 import License from '@components/misc/License.astro'
 import Markdown from '@components/misc/Markdown.astro'
+import Comments from '@components/widget/Comments.svelte'
 import I18nKey from '@i18n/i18nKey'
 import { i18n } from '@i18n/translation'
 import MainGridLayout from '@layouts/MainGridLayout.astro'
@@ -16,7 +17,6 @@ import PostMetadata from '../../components/PostMeta.astro'
 import ImageWrapper from '../../components/misc/ImageWrapper.astro'
 import { profileConfig, siteConfig } from '../../config'
 import { formatDateToYYYYMMDD } from '../../utils/date-utils'
-import Comments from '@components/widget/Comments.svelte'
 
 dayjs.extend(utc)
 
@@ -185,7 +185,7 @@ const jsonLd = {
            bg-[var(--primary)] relative
            flex items-center justify-center mr-0">
     <!-- 半透明遮罩层 -->
-    <div class="absolute inset-0 bg-white/70 dark:bg-black/70 rounded-md overflow-hidden"></div>
+    <div class="absolute -inset-1 bg-white/70 dark:bg-black/70 rounded-md overflow-hidden"></div>
     
     <!-- 图标 -->
     <Icon name="material-symbols:history-rounded" 

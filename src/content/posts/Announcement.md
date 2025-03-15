@@ -89,7 +89,7 @@ https://astro.build/
 - **Customizations**: Adapted from the original framework's [PR](https://github.com/saicaca/fuwari/pulls) and modifications by the following bloggers (special thanks! 🙏):  
   - Added features: Post pinning, font optimization, comment system, blogroll module, Expressive Code highlighting, series navigation  
   - Bloggers' Homepage: 
-  
+
 https://blog.aulypc0x0.online/
 
 https://ikamusume7.org/
@@ -181,7 +181,7 @@ https://astro.build/
 - **功能优化**：参考了原框架的[PR](https://github.com/saicaca/fuwari/pulls)及以下两位博主的改造方案，特别致谢 🙏  
   - 新增功能：文章置顶、字体美化、评论系统、友链模块、Expressive Code 代码高亮、系列文章导航  
   - 博主主页：  
-  
+
 https://blog.aulypc0x0.online/
 
 https://ikamusume7.org/
@@ -271,7 +271,7 @@ https://astro.build/
 - **カスタマイズ**：原フレームワークの[PR](https://github.com/saicaca/fuwari/pulls)及び以下のブロガーの改造案を参考に機能追加（謝辞 🙏）：  
   - 追加機能：記事固定表示、フォント最適化、コメントシステム、相互リンクモジュール、Expressive Codeハイライト、シリーズ記事ナビゲーション  
   - ブロガープロフィール：  
-  
+
 https://blog.aulypc0x0.online/
 
 https://ikamusume7.org/
