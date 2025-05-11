@@ -4,23 +4,22 @@ import I18nKey from '@i18n/i18nKey'
 import { i18n } from '@i18n/translation'
 
 export async function getSortedPosts(): Promise<
-  { body: string, data: BlogPostData; slug: string }[]
+  { body: string; data: BlogPostData; slug: string }[]
 > {
   const allBlogPosts = (await getCollection('posts', ({ data }) => {
     return import.meta.env.PROD ? data.draft !== true : true
-  })) as unknown as { body: string, data: BlogPostData; slug: string }[]
+  })) as unknown as { body: string; data: BlogPostData; slug: string }[]
 
-  const sorted = allBlogPosts.sort(
-    (a: { data: BlogPostData }, b: { data: BlogPostData }) => {
-      // 首先按置顶状态排序
-      if (a.data.pinned && !b.data.pinned) return -1;
-      if (!a.data.pinned && b.data.pinned) return 1;
-      // 然后按发布时间排序
-      const dateA = new Date(a.data.published)
-      const dateB = new Date(b.data.published)
-      return dateA > dateB ? -1 : 1
-    },
-  )
+  const sorted = allBlogPosts.sort((a, b) => {
+    // First sort by pinned status (pinned posts come first)
+    if (a.data.pinned && !b.data.pinned) return -1
+    if (!a.data.pinned && b.data.pinned) return 1
+
+    // Then sort by date (newest first) for posts with the same pinned status
+    const dateA = new Date(a.data.published)
+    const dateB = new Date(b.data.published)
+    return dateA > dateB ? -1 : 1
+  })
 
   for (let i = 1; i < sorted.length; i++) {
     sorted[i].data.nextSlug = sorted[i - 1].slug
@@ -106,7 +105,7 @@ export async function getPostSeries(
   posts.sort((a, b) => {
     const dateA = new Date(a.data.published)
     const dateB = new Date(b.data.published)
-    return dateB.getTime() - dateA.getTime()  // 修改这里
+    return dateB.getTime() - dateA.getTime() // 修改这里
   })
 
   return posts
