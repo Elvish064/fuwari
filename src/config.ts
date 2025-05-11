@@ -45,6 +45,7 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Series,
     LinkPreset.About,
     LinkPreset.Friends,
+    LinkPreset.Blog,
     
     {
       name: 'GitHub',

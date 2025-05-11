@@ -20,12 +20,34 @@ const { class: className, style } = Astro.props
     <!-- 半透明遮罩层 -->
     <div class="absolute -inset-1 bg-white/70 dark:bg-black/70 rounded-md overflow-hidden"></div>
 </div>
-            <h2 class="text-2xl font-bold text-black/90 dark:text-white/90">欢迎来到我的博客</h2>
+            <h2 class="text-2xl font-bold text-black/90 dark:text-white/90">Welcome to my blog,Elvishの小窝</h2>
         </div>
         
         <div class="prose max-w-none text-black/75 dark:text-white/75">
             <img src="../../src/assets/images/test.png" alt="欢迎图片" class="rounded-xl w-full mb-4"/>
-            <p class="text-base">这里是一些介绍文字，你可以自由编辑这部分内容...</p>
+            <p class="text-base">首次光临本站，请先查看公告</p>
+            <p class="text-base">Welcome to my site, please check the announcement first</p>
+            <p class="text-base">当サイトへようこそ。まずはお知らせをご確認ください</p>
         </div>
     </div>
+    <!-- card -->
+<div class="link-card__container">
+  <a href="/posts/announcement/" class="link-card">
+    <div class="link-card__info">
+      <div class="link-card__title">Announcement/置顶公告/トップのお知らせ</div>
+      <div class="link-card__description">README FIRST</div>
+      <div class="link-card__metadata">
+        <div class="link-card__domain">
+          <img alt="favicon" class="link-card__favicon" src="https://www.google.com/s2/favicons?domain=elvish.me">
+          <span class="link-card__domain-name">elvish.me</span>
+        </div>
+      </div>
+    </div>
+    <div class="link-card__thumbnail">
+      <img alt="" class="link-card__image" src="../../src/assets/images/test.png">
+    </div>
+  </a>
+</div>
+    <!-- card -->
+
 </div>
