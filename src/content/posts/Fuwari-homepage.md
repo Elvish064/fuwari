@@ -82,7 +82,7 @@ import { getSortedPosts } from '../../utils/content-utils'
 ---
 export const getStaticPaths = (async ({ paginate }) => {
   const allBlogPosts = await getSortedPosts()
-  //existing code...
+  // ...existing code...
 ```
 
 ## 4.在导航栏增加博客选项
@@ -97,7 +97,7 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.About,
     LinkPreset.Friends,
  
-    //existing code...
+    // ...existing code...
 ```
 <br/>
 
@@ -110,7 +110,7 @@ export enum LinkPreset {
   About = 4,
   Friends = 5,
 }
-//existing code...
+// ...existing code...
 ```
 <br/>
 
@@ -139,7 +139,7 @@ export enum LinkPreset {
   series = 'series',
   blog = 'blog',
 }
-//existing code...
+// ...existing code...
 ```
 <br/>
 
@@ -163,7 +163,7 @@ const getPageUrl = (p: number) => {
   return `/blog/${p}/`
 }
 ---
-//existing code...
+// ...existing code...
 ```
 ---
 <br/>

@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets'
+import AnnouncementImage from '../assets/images/announcement.png'
+import BackImage from '../assets/images/back.png'
 interface Props {
   class?: string
   style?: string
@@ -24,7 +27,7 @@ const { class: className, style } = Astro.props
         </div>
         
         <div class="prose max-w-none text-black/75 dark:text-white/75">
-            <img src="../../src/assets/images/back.png" alt="欢迎图片" class="rounded-xl w-full mb-4"/>
+            <Image src={BackImage} alt="欢迎图片" class="rounded-xl w-full mb-4"/>
             <p class="text-base">首次光临本站，请先查看公告</p>
             <p class="text-base">Welcome to my site, please check the announcement first</p>
             <p class="text-base">当サイトへようこそ。まずはお知らせをご確認ください</p>
@@ -44,7 +47,7 @@ const { class: className, style } = Astro.props
       </div>
     </div>
     <div class="link-card__thumbnail">
-      <img alt="" class="link-card__image" src="../../src/assets/images/announcement.png">
+      <Image src={AnnouncementImage} alt="公告图片" class="link-card__image"/>
     </div>
   </a>
 </div>
