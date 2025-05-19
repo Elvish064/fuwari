@@ -60,6 +60,25 @@ const { class: className, style } = Astro.props
         </div>
 
 ```
+:::important
+**在此处引用`src/assets`里的图片需要在文件头加上：**
+```js title="ContentCard.astro" ins={2-3,12}
+---
+import { Image } from 'astro:assets'
+import ExampletImage from '../assets/images/example.png'
+
+interface Props {
+  class?: string
+  style?: string
+}
+// ...existing code...
+
+// 使用方式如下：
+<Image src={BackImage} alt="示例图片" class="rounded-xl w-full mb-4"/>
+
+// ...existing code...
+```
+:::
 
 ## 3.修改依赖文件路径
 
@@ -86,7 +105,7 @@ export const getStaticPaths = (async ({ paginate }) => {
 ```
 
 ## 4.在导航栏增加博客选项
-在"主页"后添加"博客"，并配置路径和i18n
+在导航栏的`主页`后添加`博客`，并配置路径和i18n
 ```typescript title="src/config.ts" startLineNumber=41 ins={4}
 export const navBarConfig: NavBarConfig = {
   links: [
