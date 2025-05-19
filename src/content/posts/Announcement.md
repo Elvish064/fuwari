@@ -3,7 +3,7 @@ title: "[Pinned]Announcement/置顶公告/トップのお知らせ"
 published: 2025-03-06 16:02:47
 updated: 2025-03-06 16:02:47
 description: "README"
-image: ""
+image: "../../assets/images/announcement.png"
 tags: ["Announcement"]
 category: Announcement
 draft: false

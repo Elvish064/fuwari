@@ -46,9 +46,9 @@ export function remarkModifiedTime() {
 
 ## 3.添加配置
 ```js title="astro.config.mjs" ins={2}
-...
+//existing code...
 import { remarkModifiedTime } from './src/plugins/remark-modified-time.mjs'
-···
+//existing code...
 ```
 
 ```js startLineNumber=75 ins={10}
@@ -70,7 +70,7 @@ import { remarkModifiedTime } from './src/plugins/remark-modified-time.mjs'
 这里简单做了一个适配的ui组件，置于文章末尾，**时间为倒数**（即距离现在过去了多少时间）
 
 ```js title="src/pages/posts/[slug].astro" ins={2-3,12,29-31,120-194} collapse={4-10,14-26,34-119}
-···
+//existing code...
 import dayjs from 'dayjs'
 import utc from 'dayjs/plugin/utc'
 import { licenseConfig } from 'src/config'
@@ -262,7 +262,7 @@ const jsonLd = {
         </div>
         <!--  <p>{lastModified}</p>   -->
     </div>
-···
+//existing code...
 ```
 <a name="4.1"></a>
 
