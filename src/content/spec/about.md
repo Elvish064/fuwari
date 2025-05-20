@@ -124,7 +124,7 @@
 
 ### ✉️ Contact Me
 - Just press the **Email** Button on the ◀️left side or 🔽below
-- ~~Or you can call my code on the radio frequency **144MHz~146MHz** if you can~~
+- ~~Or you can CQ my call code if you can~~
 
 
 
@@ -204,7 +204,7 @@
 
 ### ✉️ 联系我
 - 点击页面 ◀️左侧 或 🔽下方 的 **Email**按钮
-- ~~或者你可以尝试在 **144MHz~146MHz** 频段呼叫我的呼号（bushi）~~
+- ~~或者你可以尝试CQ我的呼号（bushi）~~
 
 
 ---
@@ -283,7 +283,7 @@
 ---  
 ### ✉️ 連絡先  
 - ページの◀️左側 または 🔽下部 の **メールボタン** をクリック  
-- ~~もしくは **144MHz~146MHz** 周波数でコールサインを呼んでみてください（笑）~~  
+- ~~CQ私のラジオコールサインを試してください（笑）~~  
   </div>
 </div>
 
