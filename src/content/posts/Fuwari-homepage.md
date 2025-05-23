@@ -23,10 +23,14 @@ lang: 'zh_CN'
 将`src/pages/[...page].astro`移至新建目录`src/pages/blog/[...page].astro`<br/>
 并新建文件`src/pages/index.astro`
 
-```js title="index.astro" ins={1-11}
+```js title="index.astro" ins={1-22}
 ---
+import { getEntry } from 'astro:content'
+import Markdown from '@components/misc/Markdown.astro'
 import ContentCard from '../components/ContentCard.astro'
 import MainGridLayout from '../layouts/MainGridLayout.astro'
+const aboutPost = await getEntry('spec', 'index')
+const { Content } = await aboutPost.render()
 ---
 
 <MainGridLayout>
@@ -34,11 +38,19 @@ import MainGridLayout from '../layouts/MainGridLayout.astro'
         class="onload-animation" 
         style="animation-delay: var(--content-delay)"
     />
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32 mb-4">
+        <div class="card-base z-10 px-9 py-6 relative w-full ">
+            <Markdown class="mt-2">
+                <Content />
+            </Markdown>
+        </div>
+    </div>
 </MainGridLayout>
-
 ```
 
 ## 2.配置主页内容
+
+### 2.1 以HTML语言编写
 新建文件`src/components/ContentCard.astro`
 
 ```js title="ContentCard.astro" {9} ins={1-8,10-16}
@@ -79,6 +91,12 @@ interface Props {
 // ...existing code...
 ```
 :::
+
+### 2.2 以Markdown语言编写
+新建文件`src/content/spec/index.md`
+```md title="src/content/spec/index.md" ins={1}
+# 在此处编写主页渲染的Markdown内容
+```
 
 ## 3.修改依赖文件路径
 
