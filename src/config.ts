@@ -57,7 +57,7 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'https://cdn.jsdelivr.net/npm/elvish-fuwari-public@latest/fuwari/mainpage/avatar.jpeg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'assets/images/avatar.jpeg',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: 'Elvish',
   bio: '你好喵~',
   links: [

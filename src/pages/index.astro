@@ -10,7 +10,7 @@ import { getSortedPosts } from '../utils/content-utils'
 
 // 获取排序后的文章列表
 const allPosts = await getSortedPosts()
-const posts = allPosts.slice(0, 5)
+const posts = allPosts.slice(1, 6)
 const aboutPost = await getEntry('spec', 'index')
 const { Content } = await aboutPost.render()
 ---
@@ -28,39 +28,106 @@ const { Content } = await aboutPost.render()
         </div>
     </div>
 
+        <!-- 导航卡片 -->
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mt-4">
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <div class="grid grid-cols-2 gap-4">
+                <a href="/blog/" 
+                    class="flex flex-col items-center justify-center p-6 rounded-xl
+                        bg-[var(--enter-btn-bg)] hover:bg-[var(--enter-btn-bg-hover)]
+                        active:bg-[var(--enter-btn-bg-active)] active:scale-95
+                        transition-all group">
+                    <Icon name="material-symbols:book" 
+                        class="text-4xl text-[var(--primary)] mb-2"/>
+                    <span class="text-black/75 dark:text-white/75 
+                        group-hover:text-[var(--primary)]">博客</span>
+                </a>
+                <a href="/archive/"
+                    class="flex flex-col items-center justify-center p-6 rounded-xl
+                        bg-[var(--enter-btn-bg)] hover:bg-[var(--enter-btn-bg-hover)]
+                        active:bg-[var(--enter-btn-bg-active)] active:scale-95
+                        transition-all group">
+                    <Icon name="material-symbols:archive" 
+                        class="text-4xl text-[var(--primary)] mb-2"/>
+                    <span class="text-black/75 dark:text-white/75 
+                        group-hover:text-[var(--primary)]">归档</span>
+                </a>
+                <a href="/about/"
+                    class="flex flex-col items-center justify-center p-6 rounded-xl
+                        bg-[var(--enter-btn-bg)] hover:bg-[var(--enter-btn-bg-hover)]
+                        active:bg-[var(--enter-btn-bg-active)] active:scale-95
+                        transition-all group">
+                    <Icon name="material-symbols:info" 
+                        class="text-4xl text-[var(--primary)] mb-2"/>
+                    <span class="text-black/75 dark:text-white/75 
+                        group-hover:text-[var(--primary)]">关于</span>
+                </a>
+                <a href="/friends/"
+                    class="flex flex-col items-center justify-center p-6 rounded-xl
+                        bg-[var(--enter-btn-bg)] hover:bg-[var(--enter-btn-bg-hover)]
+                        active:bg-[var(--enter-btn-bg-active)] active:scale-95
+                        transition-all group">
+                    <Icon name="material-symbols:group" 
+                        class="text-4xl text-[var(--primary)] mb-2"/>
+                    <span class="text-black/75 dark:text-white/75 
+                        group-hover:text-[var(--primary)]">友链</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- 最新文章列表卡片 -->
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mt-4">
         <div class="card-base z-10 px-9 py-6 relative w-full">
             <h2 class="text-xl font-bold text-black/90 dark:text-white/90 mb-4">最新文章</h2>
-            <div class="divide-y divide-gray-200 dark:divide-gray-700">
+ <div class="divide-y divide-gray-200 dark:divide-gray-700">
     {posts.map((post) => (
-        <article class="py-4">
-            <div class="flex items-center gap-2 mb-2 group">
-                <div class="transition h-6 w-6 rounded-md overflow-hidden 
-                    bg-[var(--primary)] relative
-                    flex items-center justify-center">
-                    <!-- 半透明遮罩层 -->
-                    <div class="absolute -inset-1 bg-white/70 dark:bg-black/70 rounded-md overflow-hidden"></div>
-                    
-                    <!-- 图标 -->
-                    <Icon name="material-symbols:notes-rounded" 
-                        class="text-xl text-[var(--primary)] relative z-10"/>
-                </div>
-                <a href={`/posts/${post.slug}/`} class="text-black/75 dark:text-white/75 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] transition-colors">
-                    <h3 class="text-lg font-medium">{post.data.title}</h3>
-                </a>
+    <article class="py-4 relative">
+        <div class="flex items-center gap-2 mb-2 group pr-16">
+            <div class="transition h-6 w-6 rounded-md overflow-hidden 
+                bg-[var(--primary)] relative
+                flex items-center justify-center">
+                <!-- 半透明遮罩层 -->
+                <div class="absolute -inset-1 bg-white/70 dark:bg-black/70 rounded-md overflow-hidden"></div>
+                
+                <!-- 图标 -->
+                <Icon name="material-symbols:notes-rounded" 
+                    class="text-xl text-[var(--primary)] relative z-10"/>
             </div>
-            <PostMetadata 
-                published={post.data.published}
-                updated={post.data.updated}
-                tags={post.data.tags}
-                category={post.data.category}
-                hideTagsForMobile={true}
-                hideUpdateDate={true}
-                class="ml-8"
-            />
-        </article>
-    ))}
+            <a href={`/posts/${post.slug}/`} class="flex items-center gap-2 text-black/75 dark:text-white/75 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] transition-colors group">
+                <h3 class="text-lg font-medium">{post.data.title}</h3>
+                <!-- 标题后的箭头 -->
+                <Icon name="material-symbols:chevron-right-rounded" 
+                    class="text-xl text-[var(--primary)] opacity-0 -translate-x-2 transition-all group-hover:opacity-100 group-hover:translate-x-0"/>
+            </a>
+        </div>
+        <PostMetadata 
+            published={post.data.published}
+            updated={post.data.updated}
+            tags={post.data.tags}
+            category={post.data.category}
+            hideTagsForMobile={true}
+            hideUpdateDate={true}
+            class="ml-8"
+        />
+        
+        <!-- 右侧按钮 -->
+    <a href={`/posts/${post.slug}/`} 
+        aria-label={post.data.title}
+        class="!hidden md:!flex btn-regular w-[3.25rem] 
+            absolute right-0 top-3 bottom-3 rounded-xl 
+            bg-[var(--enter-btn-bg)]
+            hover:bg-[var(--enter-btn-bg-hover)] 
+            active:bg-[var(--enter-btn-bg-active)] 
+            active:scale-95 
+            transition-all">
+        <Icon 
+            name="material-symbols:chevron-right-rounded"
+            class="transition text-[var(--primary)] text-2xl mx-auto my-auto"
+        />
+    </a>
+</article>
+))}
 </div>
         </div>
     </div>
