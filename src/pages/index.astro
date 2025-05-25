@@ -76,10 +76,31 @@ const { Content } = await aboutPost.render()
         </div>
     </div>
 
-    <!-- 最新文章列表卡片 -->
+<!-- 最新文章列表卡片 -->
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative mt-4">
         <div class="card-base z-10 px-9 py-6 relative w-full">
-            <h2 class="text-xl font-bold text-black/90 dark:text-white/90 mb-4">最新文章</h2>
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold text-black/90 dark:text-white/90">最新文章</h2>
+                <a href="/blog/" 
+                    class="flex items-center gap-1.5 px-4 py-2 rounded-lg
+                        text-black/75 dark:text-white/75
+                        bg-[var(--enter-btn-bg)]
+                        hover:bg-[var(--enter-btn-bg-hover)]
+                        hover:text-[var(--primary)]
+                        active:bg-[var(--enter-btn-bg-active)]
+                        active:scale-95
+                        transition-all group"
+                >
+                    <span class="text-sm">查看全部文章</span>
+                    <Icon 
+                        name="material-symbols:chevron-right-rounded"
+                        class="text-xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5"
+                    />
+                </a>
+            </div>
+                <!-- 添加标题分割线 -->
+     <div class="h-0.5 bg-gray-300/80 dark:bg-gray-600/80"></div>
+    <div class="divide-y divide-gray-200/60 dark:divide-gray-700/60">
  <div class="divide-y divide-gray-200 dark:divide-gray-700">
     {posts.map((post) => (
     <article class="py-4 relative">
