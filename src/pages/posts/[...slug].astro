@@ -180,16 +180,14 @@ const jsonLd = {
         <div class="card-base p-1 mb-0.1">
             <script is:inline></script>
             <div class="flex items-center gap-2">
-                <!-- 修正后的图标容器 -->
+
                 <div class="transition h-9 w-9 rounded-lg overflow-hidden 
-           bg-[var(--primary)] relative
+            relative
            flex items-center justify-center mr-0">
-    <!-- 半透明遮罩层 -->
-    <div class="absolute -inset-1 bg-white/70 dark:bg-black/70 rounded-md overflow-hidden"></div>
-    
-    <!-- 图标 -->
-    <Icon name="material-symbols:history-rounded" 
-          class="text-[1.35rem] text-[var(--primary)] relative z-10"/>
+  <Icon 
+                  name="material-symbols:history-rounded"
+                  class="text-4xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-2 rounded-md"
+                />
 </div>
                 
                 <!-- 文字容器保持不变 -->

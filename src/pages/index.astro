@@ -22,7 +22,7 @@ const { Content } = await aboutPost.render()
     />
     <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32 mb-4">
         <div class="card-base z-10 px-9 py-6 relative w-full">
-            <Markdown class="mt-2">
+            <Markdown class="mt-2 mb-6 markdown-content onload-animation">
                 <Content />
             </Markdown>
         </div>
@@ -106,14 +106,12 @@ const { Content } = await aboutPost.render()
     <article class="py-4 relative">
         <div class="flex items-center gap-2 mb-2 group pr-16">
             <div class="transition h-6 w-6 rounded-md overflow-hidden 
-                bg-[var(--primary)] relative
+             relative
                 flex items-center justify-center">
-                <!-- 半透明遮罩层 -->
-                <div class="absolute -inset-1 bg-white/70 dark:bg-black/70 rounded-md overflow-hidden"></div>
-                
-                <!-- 图标 -->
-                <Icon name="material-symbols:notes-rounded" 
-                    class="text-xl text-[var(--primary)] relative z-10"/>
+                <Icon 
+                  name="material-symbols:notes-rounded"
+                  class="text-2xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-1 rounded-md"
+                />
             </div>
             <a href={`/posts/${post.slug}/`} class="flex items-center gap-2 text-black/75 dark:text-white/75 hover:text-[var(--primary)] dark:hover:text-[var(--primary)] transition-colors group">
                 <h3 class="text-lg font-medium">{post.data.title}</h3>

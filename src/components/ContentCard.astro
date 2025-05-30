@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
 import AnnouncementImage from '../assets/images/announcement.png'
 import BackImage from '../assets/images/banner.webp'
 interface Props {
@@ -46,3 +47,38 @@ const { class: className, style } = Astro.props
   </a>
 </div>
     <!-- card -->
+
+    </div>
+    
+    <div class="card-base p-6 mb-4">
+ 
+
+    <div class="card-base p-6 mb-4">
+    <div class="card-base p-1 mb-0.1">
+        <script is:inline></script>
+        <div class="flex items-center gap-2">
+            <!-- 方案1：使用超大字号工具类 + 字重调整 -->
+            <h2 class="text-3xl font-extrabold leading-tight text-black/100 dark:text-white/100 m-0">
+                浏览提示
+            </h2>
+            
+            <!-- 方案2：响应式超大字号（可选） -->
+            <!-- <h2 class="text-3xl md:text-5xl font-bold tracking-tighter text-black/90 dark:text-white/90">...</h2> -->
+            
+            <!-- 方案3：自定义字体尺寸（最灵活） -->
+            <!-- <h2 class="text-[2.5rem] font-black text-black/90 dark:text-white/90">...</h2> -->
+        </div>
+        <br/>
+        <div class="prose max-w-none text-black/75 dark:text-white/75">
+            <!-- 修改部分：添加行内 Flex 容器 -->
+            <div class="inline-flex items-center gap-2">
+                <p class="text-base m-0">点击右上角的这个图标切换页面</p>
+                <Icon 
+                  name="material-symbols:menu-rounded"
+                  class="text-2xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-1 rounded-md"
+                />
+            </div>
+            这里可以继续添加其他文字 <!-- 新增内容 -->
+        </div>
+    </div>
+</div>
