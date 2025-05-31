@@ -36,6 +36,15 @@ pinned: true
   visibility: visible;
   pointer-events: auto;
 }
+/* 添加语言按钮激活状态样式 */
+.btn-card.active {
+  background: var(--primary) !important;
+}
+
+.btn-card.active div {
+  color: white !important;
+}
+
 </style>
 
 
@@ -343,6 +352,14 @@ function switchLanguage(lang) {
     
     if (!newActive) return;
 
+    // 更新按钮状态
+    document.querySelectorAll('.btn-card').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    const activeBtn = document.querySelector(`a[href="#${lang}"] .btn-card`);
+    if (activeBtn) {
+        activeBtn.classList.add('active');
+    }
     // 获取当前激活的部分
     const currentActive = container.querySelector('.language-section.active');
     
@@ -382,8 +399,12 @@ function switchLanguage(lang) {
     }
 }
 
-// 页面加载时默认显示英文
+// 初始化时设置英文按钮为激活状态
 document.addEventListener('DOMContentLoaded', function() {
     switchLanguage('en');
+    const enBtn = document.querySelector('a[href="#en"] .btn-card');
+    if (enBtn) {
+        enBtn.classList.add('active');
+    }
 });
 </script>

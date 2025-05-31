@@ -18,7 +18,8 @@ const { class: className, style } = Astro.props
             <script is:inline></script>
             <div class="flex items-center gap-2">
 
-            <h2 class="text-2xl font-bold text-black/90 dark:text-white/90">Welcome to my blog👋</h2>
+            <h2 class="text-3xl font-extrabold leading-tight text-black/100 dark:text-white/100 m-0">
+                Welcome to my blog👋</h2>
         </div>
              <br/>
         <div class="prose max-w-none text-black/75 dark:text-white/75">
@@ -26,6 +27,7 @@ const { class: className, style } = Astro.props
             <p class="text-base">首次光临本站，请先查看公告</p>
             <p class="text-base">Welcome to my site, please check the announcement first</p>
             <p class="text-base">当サイトへようこそ。まずはお知らせをご確認ください</p>
+            <br/>
         </div>
     </div>
     <!-- card -->
@@ -62,6 +64,7 @@ const { class: className, style } = Astro.props
                 浏览提示
             </h2>
             
+            
             <!-- 方案2：响应式超大字号（可选） -->
             <!-- <h2 class="text-3xl md:text-5xl font-bold tracking-tighter text-black/90 dark:text-white/90">...</h2> -->
             
@@ -71,8 +74,9 @@ const { class: className, style } = Astro.props
         <br/>
         <div class="prose max-w-none text-black/75 dark:text-white/75">
             <!-- 修改部分：添加行内 Flex 容器 -->
-            <div class="inline-flex items-center gap-2">
-                <p class="text-base m-0">点击顶部导航栏页面按钮或右上角</p>
+            <div class="inline-flex items-center">
+              <li class="text-[var(--primary)]"></li>
+                <p class="text-base">点击顶部导航栏页面按钮或右上角</p>
                 <Icon 
                   name="material-symbols:menu-rounded"
                   class="text-3xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-1 rounded-md"
@@ -82,8 +86,9 @@ const { class: className, style } = Astro.props
             <br/>
 <div class="prose max-w-none text-black/75 dark:text-white/75">
     <!-- 第一个图标保持不变 -->
-    <div class="inline-flex items-center gap-2">
-        <p class="text-base m-0">点击</p>
+    <div class="inline-flex items-center">
+      <li class="text-[var(--primary)]"></li>
+        <p class="text-base">点击</p>
         <Icon 
           name="material-symbols:palette-outline"
           class="text-3xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-1 rounded-md"
@@ -93,8 +98,9 @@ const { class: className, style } = Astro.props
     <br/>
     
     <!-- 修改后的 SVG 图标 -->
-    <div class="inline-flex items-center gap-2">
-        <p class="text-base m-0">点击</p>
+    <div class="inline-flex items-center">
+      <li class="text-[var(--primary)]"></li>
+        <p class="text-base">点击</p>
         <span class="inline-flex text-2xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-1 rounded-md">
             <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -102,13 +108,13 @@ const { class: className, style } = Astro.props
                 role="img"
                 viewBox="0 0 24 24"
                 class="inline-block w-[0.85em] h-[0.85em]" <!-- 关键修改：调整宽高 -->
-            >
                 <path fill="currentColor" d="M12 17V7Q9.925 7 8.463 8.463T7 12t1.463 3.538T12 17m0 5q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8"></path>
             </svg>
         </span>
     </div>
     图标以切换整体为 自动/暗色/亮色
+<div class="inline-flex items-center">
+        <li class="text-[var(--primary)]"></li>
+        <p class="text-base">在某些页面中，可以点击文章上的按钮来切换内容语言</p>
+    
 </div>       
- </div>
-    </div>
-</div>
