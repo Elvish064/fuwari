@@ -79,7 +79,7 @@ const { class: className, style } = Astro.props
                 <p class="text-base">点击顶部导航栏页面按钮或右上角</p>
                 <Icon 
                   name="material-symbols:menu-rounded"
-                  class="text-3xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-1 rounded-md"
+                  class="text-3xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-[var(--enter-btn-bg)] p-1 rounded-md"
                 />
             </div>
             图标以切换页面 <!-- 新增内容 --> 
@@ -91,7 +91,7 @@ const { class: className, style } = Astro.props
         <p class="text-base">点击</p>
         <Icon 
           name="material-symbols:palette-outline"
-          class="text-3xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-1 rounded-md"
+          class="text-3xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-[var(--enter-btn-bg)] p-1 rounded-md"
         />
     </div>
     图标以更改主题色
@@ -101,7 +101,7 @@ const { class: className, style } = Astro.props
     <div class="inline-flex items-center">
       <li class="text-[var(--primary)]"></li>
         <p class="text-base">点击</p>
-        <span class="inline-flex text-2xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-gray-100 dark:bg-gray-800 p-1 rounded-md">
+        <span class="inline-flex text-2xl text-[var(--primary)] transition-transform group-hover:translate-x-0.5 bg-[var(--enter-btn-bg)] p-1 rounded-md">
             <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 aria-hidden="true" 
