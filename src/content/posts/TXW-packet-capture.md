@@ -4,7 +4,7 @@ published: 2025-07-23
 updated: 2025-07-23 15:01:00
 description: "i dont know qaq"
 image: ""
-tags: [Reqable,packet capture]
+tags: [Reqable]
 category: Reqable
 series: Reqable
 draft: false
